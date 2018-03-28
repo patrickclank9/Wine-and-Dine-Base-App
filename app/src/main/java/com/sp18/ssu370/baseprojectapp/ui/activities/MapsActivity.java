@@ -1,4 +1,4 @@
-package com.sp18.ssu370.baseprojectapp;
+package com.sp18.ssu370.baseprojectapp.ui.activities;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -17,11 +17,13 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.sp18.ssu370.baseprojectapp.R;
 
 import java.io.IOException;
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class
+MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     LocationManager locationManager;
@@ -35,7 +37,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission
+                (this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -43,11 +48,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-            return;
+//            if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_COARSE_LOCATION)&& ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)){
+//                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+//                //add explanation to user asyncronously as to why they need this permission
+//            } else{
+//                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+//            }
+
+
         }
         //check if network provider is enabled
         if(locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)){
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 1, new LocationListener() {
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000,
+                    0, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
                     double latitude = location.getLatitude();
@@ -55,7 +68,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     LatLng latLng = new LatLng(latitude, longitude);
                     Geocoder geocoder = new Geocoder((getApplicationContext()));
                     try {
-                        List<Address> addressList = geocoder.getFromLocation(latitude, longitude, 1);
+                        List<Address> addressList = geocoder.getFromLocation(latitude, longitude,
+                                1);
                         String string = addressList.get(0).getLocality() + ", ";
                         string += addressList.get(0).getCountryName();
                         mMap.addMarker(new MarkerOptions().position(latLng).title(string));
@@ -81,7 +95,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
         } else if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 1, new LocationListener() {
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000,
+                    0, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
                     double latitude = location.getLatitude();
@@ -89,7 +104,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     LatLng latLng = new LatLng(latitude, longitude);
                     Geocoder geocoder = new Geocoder((getApplicationContext()));
                     try {
-                        List<Address> addressList = geocoder.getFromLocation(latitude, longitude, 1);
+                        List<Address> addressList = geocoder.getFromLocation(latitude, longitude,
+                                1);
                         String string = addressList.get(0).getLocality() + ", ";
                         string += addressList.get(0).getCountryName();
                         mMap.addMarker(new MarkerOptions().position(latLng).title(string));
@@ -115,6 +131,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             });
         }
+
 
     }
 
