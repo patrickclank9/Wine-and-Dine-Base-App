@@ -1,6 +1,8 @@
 package com.sp18.ssu370.baseprojectapp.ui.activities;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -10,6 +12,8 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -28,6 +32,7 @@ MapsActivity extends FragmentActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
     LocationManager locationManager;
 
+    @SuppressLint("MissingPermission")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,30 +42,10 @@ MapsActivity extends FragmentActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission
-                (this, Manifest.permission.ACCESS_COARSE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-//            if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_COARSE_LOCATION)&& ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)){
-//                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-//                //add explanation to user asyncronously as to why they need this permission
-//            } else{
-//                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-//            }
-
-
-        }
         //check if network provider is enabled
         if(locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)){
             locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000,
-                    0, new LocationListener() {
+                    1, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
                     double latitude = location.getLatitude();
@@ -93,10 +78,11 @@ MapsActivity extends FragmentActivity implements OnMapReadyCallback {
                 public void onProviderDisabled(String provider) {
 
                 }
+
             });
         } else if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000,
-                    0, new LocationListener() {
+                    1, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
                     double latitude = location.getLatitude();
@@ -154,5 +140,24 @@ MapsActivity extends FragmentActivity implements OnMapReadyCallback {
         //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
+    }
+    public void onMapSearch(View view){
+        EditText locationSearch = findViewById(R.id.editText);
+        String location = locationSearch.getText().toString();
+        List<Address> addressList = null;
+        if(location != null || !location.equals("")){
+            Geocoder geocoder = new Geocoder(MapsActivity.this);
+            try{
+                addressList = geocoder.getFromLocationName(location, 1);
+            } catch (IOException e){
+                e.printStackTrace();
+            }
+            Address address = addressList.get(0);
+            String string = addressList.get(0).getLocality() + ", ";
+            string += addressList.get(0).getCountryName();
+            LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
+            mMap.addMarker(new MarkerOptions().position(latLng).title(string));
+            mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+        }
     }
 }
