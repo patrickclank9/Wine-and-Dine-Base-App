@@ -41,7 +41,7 @@
         android:id="@+id/toWineSearchActivity3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Pink"
+        android:text="Rose"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
