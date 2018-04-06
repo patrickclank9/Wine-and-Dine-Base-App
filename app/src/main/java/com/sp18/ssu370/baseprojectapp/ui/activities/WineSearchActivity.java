@@ -5,15 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.sp18.ssu370.baseprojectapp.R;
 
 public class WineSearchActivity extends AppCompatActivity {
 
     private Button wineinfobutton;
-    private Button profilebutton;
-    private Button mainactivitybutton;
-    private Button mapbutton;
+    private ImageButton profilebutton;
+    private ImageButton mainactivitybutton;
+    private ImageButton mapbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class WineSearchActivity extends AppCompatActivity {
             }
         });
 
-        profilebutton = (Button) findViewById(R.id.toProfileActivity);                                          // Profile button
+        profilebutton = findViewById(R.id.toProfileActivity);                                          // Profile button
         profilebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +37,7 @@ public class WineSearchActivity extends AppCompatActivity {
             }
         });
 
-        mainactivitybutton = (Button) findViewById(R.id.toMainActivity);                                        // Home button
+        mainactivitybutton = findViewById(R.id.toMainActivity);                                        // Home button
         mainactivitybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +45,7 @@ public class WineSearchActivity extends AppCompatActivity {
             }
         });
 
-        mapbutton = (Button) findViewById(R.id.FindLoc);                                                       // Map button
+        mapbutton = findViewById(R.id.FindLoc);                                                       // Map button
         mapbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

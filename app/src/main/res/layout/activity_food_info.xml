@@ -16,11 +16,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/toProfileActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Profile"
+        android:src="@drawable/ic_profile"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,22 +29,24 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toMainActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Home"
+        android:src="@drawable/ic_home"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/FindLoc"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Maps"
+        android:src="@drawable/ic_maps"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
