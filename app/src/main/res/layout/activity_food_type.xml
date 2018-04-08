@@ -16,11 +16,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity1"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Breakfast"
+        android:src="@drawable/ic_breakfast"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         android:layout_marginBottom="125dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,11 +29,12 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Lunch"
+        android:src="@drawable/ic_lunch"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         android:layout_marginBottom="125dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,44 +42,48 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Dinner"
+        android:src="@drawable/ic_dinner"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Dessert"
+        android:src="@drawable/ic_dessert"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity5"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Snack"
+        android:src="@drawable/ic_snack"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toProfileActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Profile"
+        android:src="@drawable/ic_profile"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,22 +91,24 @@
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toMainActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Home"
+        android:src="@drawable/ic_home"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/FindLoc"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Maps"
+        android:src="@drawable/ic_maps"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
