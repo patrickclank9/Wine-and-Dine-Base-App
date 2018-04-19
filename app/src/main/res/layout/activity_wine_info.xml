@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.WineInfoActivity">
+    tools:context=".ui.activities.WineInfoActivity"
+    android:background="#FAECEF">
 
     <TextView
         android:id="@+id/textView"
@@ -20,38 +21,41 @@
         android:id="@+id/toProfileActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_profile"
+        android:src="@drawable/ic_profile2"
         android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
         />
 
     <ImageButton
         android:id="@+id/toMainActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_home"
+        android:src="@drawable/ic_home2"
         android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
         />
 
     <ImageButton
         android:id="@+id/FindLoc"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_maps"
+        android:src="@drawable/ic_map2"
         android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
         />
 
 </android.support.constraint.ConstraintLayout>
