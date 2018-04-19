@@ -11,6 +11,7 @@ import com.sp18.ssu370.baseprojectapp.R;
 
 public class FoodInfoActivity extends AppCompatActivity {
 
+    public static final String FOOD_EXTRA_KEY = "foodExtraKey";
     private ImageButton profilebutton;
     private ImageButton mainactivitybutton;
     private ImageButton mapbutton;

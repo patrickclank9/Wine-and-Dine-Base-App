@@ -9,17 +9,17 @@ import org.parceler.Parcel;
 import java.util.ArrayList;
 
 @Parcel
-public class Wine {
-    @SerializedName("wineName")
+public class Food {
+    @SerializedName("recipeName")
     private String name;
 
     @SerializedName("sourceDisplayName")
     private String source;
 
     @SerializedName("id")
-    private String WineId;
+    private String FoodId;
 
-    @SerializedName("complements")
+    @SerializedName("ingredients")
     private ArrayList<String> complements;
 
     @SerializedName("smallImageUrls")
@@ -33,8 +33,8 @@ public class Wine {
         return source;
     }
 
-    public String getWineId() {
-        return WineId;
+    public String getFoodId() {
+        return FoodId;
     }
 
     public ArrayList<String> getComplements() {
