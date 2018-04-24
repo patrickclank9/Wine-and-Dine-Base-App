@@ -27,7 +27,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:27.+'
     compile 'com.android.support.constraint:constraint-layout:1.1.0'
-    compile "com.google.android.gms:play-services-location:15.0.0"
+    compile 'com.google.android.gms:play-services-location:15.0.0'
+    compile 'com.google.android.gms:play-services-places:15.0.0'
     compile 'com.google.code.gson:gson:2.8.2'
     compile 'com.squareup.okhttp:okhttp:2.5.0'
     testCompile 'junit:junit:4.12'
