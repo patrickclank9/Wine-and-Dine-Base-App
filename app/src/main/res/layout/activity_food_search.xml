@@ -28,23 +28,20 @@
         app:layout_constraintStart_toStartOf="parent"
         />-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
         <EditText
             android:id="@+id/food_search_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Search terms here" />
 
-        <Button
-            android:id="@+id/food_search_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Search" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/food_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/food_result_list"

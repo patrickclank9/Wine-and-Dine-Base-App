@@ -54,7 +54,7 @@ public class FoodSearchActivity extends AppCompatActivity {
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                task = new FoodSearchAsyncTask();
+                /*task = new FoodSearchAsyncTask();
                 task.setCallbackListener(new FoodSearchAsyncTask.OnFoodFetchResponse() {
                     @Override
                     public void onCallback(FoodList FoodList) {
@@ -74,7 +74,18 @@ public class FoodSearchActivity extends AppCompatActivity {
                 });
 
                 String searchTerms = searchEditText.getText().toString();
-                task.execute(searchTerms);
+                task.execute(searchTerms);*/
+                FoodList FoodList = new FoodList();
+                adapter = new FoodSearchAdapter(FoodList.getFoods());
+
+                adapter.setFoodItemClickListener(new FoodSearchAdapter.FoodItemClickListener() {
+                    @Override
+                    public void onFoodItemClicked(Food selectedItem) {
+                        Intent navIntent = new Intent(FoodSearchActivity.this, FoodInfoActivity.class);
+                        navIntent.putExtra(FoodInfoActivity.FOOD_EXTRA_KEY, Parcels.wrap(selectedItem));
+                        startActivity(navIntent);
+                    }
+                });
             }
         });
 
