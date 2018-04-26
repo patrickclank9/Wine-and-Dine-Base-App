@@ -6,11 +6,13 @@ import java.util.ArrayList;
 
 public class FoodList {
     //@SerializedName("matches")
-    private ArrayList<Food> Foods = new ArrayList<Food>();
+    private ArrayList<Food> Foods = new ArrayList<Food>(){{
+        for (int i = 0; i < 30; i++) {
+            add(new Food());
+        }
+    }};
 
     public ArrayList<Food> getFoods() {
-        Foods.add(new Food());
-        Foods.add(new Food());
         return Foods;
     }
 }

@@ -51,6 +51,7 @@ public class FoodSearchActivity extends AppCompatActivity {
 
         foodResultList.setLayoutManager(linearLayoutManager);
 
+
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,8 +76,7 @@ public class FoodSearchActivity extends AppCompatActivity {
 
                 String searchTerms = searchEditText.getText().toString();
                 task.execute(searchTerms);*/
-                FoodList FoodList = new FoodList();
-                adapter = new FoodSearchAdapter(FoodList.getFoods());
+                adapter = new FoodSearchAdapter(new FoodList().getFoods());
 
                 adapter.setFoodItemClickListener(new FoodSearchAdapter.FoodItemClickListener() {
                     @Override
@@ -86,6 +86,7 @@ public class FoodSearchActivity extends AppCompatActivity {
                         startActivity(navIntent);
                     }
                 });
+                foodResultList.setAdapter(adapter);
             }
         });
 
