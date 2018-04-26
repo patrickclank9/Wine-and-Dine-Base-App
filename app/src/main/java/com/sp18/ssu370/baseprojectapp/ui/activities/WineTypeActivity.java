@@ -15,7 +15,6 @@ public class WineTypeActivity extends AppCompatActivity {
     private ImageButton winesearchbutton2;
     private ImageButton winesearchbutton3;
     private ImageButton winesearchbutton4;
-    private ImageButton winesearchbutton5;
     private ImageButton profilebutton;
     private ImageButton mainactivitybutton;
     private ImageButton mapbutton;
@@ -52,16 +51,8 @@ public class WineTypeActivity extends AppCompatActivity {
 
 
 
-        winesearchbutton4 = findViewById(R.id.toWineSearchActivity4);                                   // Wine Search button  Blends
+        winesearchbutton4 = findViewById(R.id.toWineSearchActivity4);                                   // Wine Search button  Sparkling
         winesearchbutton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(WineTypeActivity.this, WineSearchActivity.class));
-            }
-        });
-
-        winesearchbutton5 = findViewById(R.id.toWineSearchActivity5);                                   // Wine Search button  Sparkling
-        winesearchbutton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(WineTypeActivity.this, WineSearchActivity.class));
