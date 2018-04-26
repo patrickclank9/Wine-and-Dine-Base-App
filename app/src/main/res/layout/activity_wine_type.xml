@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activities.WineTypeActivity"
-    android:background="#FAECEF"
+    android:background="@drawable/vineyards40"
     >
 
     <TextView
@@ -20,14 +20,14 @@
 
     <ImageButton
         android:id="@+id/toWineSearchActivity1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
         android:src="@mipmap/ic_red"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        android:layout_marginBottom="125dp"
+        android:layout_marginBottom="35dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@android:color/transparent"
         />
@@ -35,14 +35,14 @@
 
     <ImageButton
         android:id="@+id/toWineSearchActivity2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
         android:src="@mipmap/ic_white"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        android:layout_marginBottom="125dp"
+        android:layout_marginBottom="35dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@android:color/transparent"
         />
@@ -51,39 +51,29 @@
 
     <ImageButton
         android:id="@+id/toWineSearchActivity3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
         android:src="@mipmap/ic_rose"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:layout_marginTop="0dp"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@android:color/transparent"
         />
+
 
 
     <ImageButton
         android:id="@+id/toWineSearchActivity4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@mipmap/ic_blends"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/transparent"
-        />
-
-    <ImageButton
-        android:id="@+id/toWineSearchActivity5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
         android:src="@mipmap/ic_sparkling"
         android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="25dp"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:layout_marginTop="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@android:color/transparent"
