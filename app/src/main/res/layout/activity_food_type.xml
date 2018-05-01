@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activities.FoodTypeActivity"
-    android:background="#FAECEF">
+    android:background="@drawable/vineyards40">
 
     <TextView
         android:id="@+id/textView"
@@ -19,69 +19,71 @@
 
     <ImageButton
         android:id="@+id/toFoodSearchActivity1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_breakfast"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_launcher_round"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        android:layout_marginBottom="125dp"
+        android:layout_marginBottom="95dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/white"
+        android:background="@android:color/transparent"
         />
 
     <ImageButton
         android:id="@+id/toFoodSearchActivity2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_lunch"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_sandwich_round"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        android:layout_marginBottom="125dp"
+        android:layout_marginBottom="95dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/white"
+        android:background="@android:color/transparent"
         />
 
     <ImageButton
         android:id="@+id/toFoodSearchActivity3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_dinner"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_salmon_round"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintTop_toTopOf="@+id/toFoodSearchActivity1"
+        android:layout_marginTop="145dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/white"
+        android:background="@android:color/transparent"
         />
 
     <ImageButton
         android:id="@+id/toFoodSearchActivity4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_dessert"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_cake_round"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintTop_toTopOf="@+id/toFoodSearchActivity2"
+        android:layout_marginTop="145dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/white"
+        android:background="@android:color/transparent"
         />
 
     <ImageButton
         android:id="@+id/toFoodSearchActivity5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_snack"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_crakersandcheese_round"
         android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/white"
+        android:background="@android:color/transparent"
         />
 
     <ImageButton
