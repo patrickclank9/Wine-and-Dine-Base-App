@@ -11,19 +11,25 @@ import java.util.ArrayList;
 @Parcel
 public class Food {
     @SerializedName("recipeName")
-    private String name;
+    private String name = "test Food";
 
     @SerializedName("sourceDisplayName")
-    private String source;
+    private String source = "test display name";
 
     @SerializedName("id")
-    private String FoodId;
+    private String FoodId = "123456";
 
     @SerializedName("ingredients")
-    private ArrayList<String> complements;
+    private ArrayList<String> complements = new ArrayList<String>() {{
+        add("test item 1");
+        add("test item 2");
+        add("test item 3");
+    }};
 
     @SerializedName("smallImageUrls")
-    private ArrayList<String> thumbnailSources;
+    private ArrayList<String> thumbnailSources  = new ArrayList<String>() {{
+        add("https://i.imgur.com/vtjlMSR.jpg");
+    }};
 
     public String getName() {
         return name;

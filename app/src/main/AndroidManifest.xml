@@ -49,6 +49,7 @@
         <activity android:name=".ui.activities.FoodTypeActivity" />
         <activity android:name=".ui.activities.FoodSearchActivity" />
         <activity android:name=".ui.activities.FoodInfoActivity"></activity>
+        <activity android:name=".ui.activities.CreateProfile"/>
     </application>
 
 </manifest>

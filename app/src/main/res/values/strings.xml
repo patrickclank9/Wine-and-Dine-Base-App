@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Wine And Dine</string>
     <string name="title_activity_maps">Map</string>
+    <string name="profile_page">Profile Page</string>
+    <string name="wine_preference">Wine Preference</string>
+    <string name="food_preference">Food Preference</string>
+    <string name="matches">Matches</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
