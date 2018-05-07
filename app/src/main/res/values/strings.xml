@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WineAndDine</string>
+    <string name="app_name">Wine And Dine</string>
     <string name="title_activity_maps">Map</string>
     <string name="profile_page">Profile Page</string>
     <string name="wine_preference">Wine Preference</string>

@@ -25,6 +25,8 @@
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp" />
+    tools:context=".ui.activities.ProfileActivity"
+    android:background="@drawable/vineyards40">
 
     <TextView
         android:id="@+id/Name"
@@ -67,6 +69,88 @@
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="368dp" />
     <Button
+
+
+
+
+    <ImageButton
+        android:id="@+id/toFoodSearchActivity1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/egg"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
+        />
+
+    <ImageButton
+        android:id="@+id/toFoodSearchActivity2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/sandwich"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
+        />
+
+    <ImageButton
+        android:id="@+id/toFoodSearchActivity3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/salmon"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintTop_toTopOf="@+id/toFoodSearchActivity1"
+        android:layout_marginTop="145dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
+        />
+
+    <ImageButton
+        android:id="@+id/toFoodSearchActivity4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/cake"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintTop_toTopOf="@+id/toFoodSearchActivity2"
+        android:layout_marginTop="145dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
+        />
+
+    <ImageButton
+        android:id="@+id/toFoodSearchActivity5"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/cheesencrackers"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
+        />
+
+
+
+
+
+
+
+
+
+    <ImageButton
         android:id="@+id/toProfileActivity"
         android:layout_width="140dp"
         android:layout_height="60dp"
@@ -77,7 +161,18 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+        android:src="@drawable/ic_profile2"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
+        />
+
+
+    <ImageButton
         android:id="@+id/toMainActivity"
         android:layout_width="140dp"
         android:layout_height="60dp"
@@ -86,8 +181,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+        android:src="@drawable/ic_home2"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
+        />
 
-    <Button
+    <ImageButton
         android:id="@+id/FindLoc"
         android:layout_width="140dp"
         android:layout_height="60dp"
@@ -125,5 +228,14 @@
         android:text="Favorite Foods"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="509dp" />
+        android:src="@drawable/ic_map2"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
+        />
 
 </android.support.constraint.ConstraintLayout>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.FoodTypeActivity">
+    tools:context=".ui.activities.FoodTypeActivity"
+    android:background="@drawable/vineyards40">
 
     <TextView
         android:id="@+id/textView"
@@ -16,96 +17,114 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Breakfast"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        android:layout_marginBottom="125dp"
+        android:layout_marginBottom="95dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Lunch"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_sandwich_round"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        android:layout_marginBottom="125dp"
+        android:layout_marginBottom="95dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Dinner"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_salmon_round"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintTop_toTopOf="@+id/toFoodSearchActivity1"
+        android:layout_marginTop="145dp"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Dessert"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_cake_round"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintTop_toTopOf="@+id/toFoodSearchActivity2"
+        android:layout_marginTop="145dp"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toFoodSearchActivity5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Snack"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/ic_crakersandcheese_round"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toProfileActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Profile"
+        android:src="@drawable/ic_profile2"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/toMainActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Home"
+        android:src="@drawable/ic_home2"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/FindLoc"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:text="Maps"
+        android:src="@drawable/ic_map2"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="@+id/textView"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
         />
 
 </android.support.constraint.ConstraintLayout>

@@ -10,4 +10,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="MistyRose">#FFE4E1</color>
     <color name="Maroon">#B03060</color>
+    <color name="colorPrimary">#722f37</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#722f37</color>
 </resources>

@@ -4,10 +4,12 @@ package com.sp18.ssu370.baseprojectapp.ui.activities;
 import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.gson.Gson;
 import com.sp18.ssu370.baseprojectapp.R;
@@ -25,23 +27,18 @@ import Database.MockDataContainer;
 import Database.WineryEntity;
 
 public class MainActivity extends AppCompatActivity {
-
     private static final String DATABASE_NAME ="wine_db";
     private WineAndDineDatabase winedatabase;
-
-
-    private Button locationbutton;
-    private Button winetypebutton;
-    private Button foodtypebutton;
-    private Button profilebutton;
-    private Button mainactivitybutton;
-    private Button mapbutton;
+    private ImageButton winetypebutton;
+    private ImageButton foodtypebutton;
+    private ImageButton profilebutton;
+    private ImageButton mainactivitybutton;
+    private ImageButton mapbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         winedatabase = Room.databaseBuilder(getApplicationContext(),
                 WineAndDineDatabase.class, DATABASE_NAME)
@@ -78,10 +75,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }) .start();
 
-
-
-
-        winetypebutton = (Button) findViewById(R.id.toWineTypeActivity);                                        // Wine Type button
+        winetypebutton = findViewById(R.id.toWineTypeActivity);                                        // Wine Type button
         winetypebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        foodtypebutton = (Button) findViewById(R.id.toFoodTypeActivity);                                        // Wine Type button
+        foodtypebutton = findViewById(R.id.toFoodTypeActivity);                                        // Wine Type button
         foodtypebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        profilebutton = (Button) findViewById(R.id.toProfileActivity);                                          // Profile button
+        profilebutton = findViewById(R.id.toProfileActivity);                                          // Profile button
         profilebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mainactivitybutton = (Button) findViewById(R.id.toMainActivity);                                        // Home button
+        mainactivitybutton = findViewById(R.id.toMainActivity);                                        // Home button
         mainactivitybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mapbutton = (Button) findViewById(R.id.FindLoc);                                                       // Map button
+        mapbutton = findViewById(R.id.FindLoc);                                                       // Map button
         mapbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
