@@ -2,5 +2,12 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="blue">#49acd5</color>
+    <color name="green">#45bc62</color>
+    <color name="orange">#eaad43</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="MistyRose">#FFE4E1</color>
+    <color name="Maroon">#B03060</color>
 </resources>

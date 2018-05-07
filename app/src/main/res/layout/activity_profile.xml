@@ -4,51 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.ProfileActivity">
+    android:background="@color/Maroon"
+    tools:context=".ui.activities.ProfileActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="244dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ryanselfie"
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile Screen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center_horizontal"
+        android:text="Ryan Romero"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="276dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:text="romeroryan01@gmail.com"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Age: 22"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Address: 1801 E Cotati Ave Rohnert Park, CA 94928"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="368dp" />
     <Button
         android:id="@+id/toProfileActivity"
-        android:layout_width="125dp"
+        android:layout_width="140dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:text="Profile"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/toMainActivity"
-        android:layout_width="125dp"
+        android:layout_width="140dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:text="Home"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/FindLoc"
-        android:layout_width="125dp"
+        android:layout_width="140dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:text="Maps"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/FavoriteWines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Favorite Wines"
+        android:onClick="ShowWinePopup"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        tools:layout_editor_absoluteY="509dp" />
+
+    <Button
+        android:id="@+id/Matches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Matches"
+        app:layout_constraintEnd_toStartOf="@+id/FavoriteFoods"
+        app:layout_constraintStart_toEndOf="@+id/FavoriteWines"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <Button
+        android:id="@+id/FavoriteFoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Favorite Foods"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="509dp" />
 
 </android.support.constraint.ConstraintLayout>
