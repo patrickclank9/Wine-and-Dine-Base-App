@@ -66,12 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 for (WineryEntity winery : mockDataList.getWinery()) {
                     winedatabase.myDao().insertWinery(winery);
                 }
-                for (StoreEntity store : mockDataList.getStore()) {
-                    winedatabase.myDao().insertStore(store);
-                }
-                for (AddressEntity address : mockDataList.getAddress()) {
-                    winedatabase.myDao().insertAddress(address);
-                }
             }
         }) .start();
 

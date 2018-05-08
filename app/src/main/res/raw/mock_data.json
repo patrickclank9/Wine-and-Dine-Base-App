@@ -247,240 +247,240 @@
       "foodname" : "Atlantic Salmon",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Fish",
-      "storeID":1
+      "storeid":1
 
     },
     {
       "foodname" : "Baked Catfish",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Fish",
-      "storeID":2
+      "storeid":2
     },
     {
       "foodname" : "Codfish",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Fish",
-      "storeID":3
+      "storeid":3
     },
     {
       "foodname" : "Tri-Tip Steak",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Steak",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "Strip Steak",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Steak",
-      "storeID":2
+      "storeid":2
     },
     {
       "foodname" : "Angus Steak",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Steak",
-      "storeID":3
+      "storeid":3
     },
     {
       "foodname" : "Prime Rib",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Steak",
-      "storeID":4
+      "storeid":4
     },
     {
       "foodname" : "Roasted Garlic Chicken",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Chicken",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "Parmesan Chicken",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Chicken",
-      "storeID":2
+      "storeid":2
     },
     {
       "foodname" : "Chicken Breast",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Chicken",
-      "storeID":3
+      "storeid":3
     },
     {
       "foodname" : "Chicken Alfredo Pasta",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"White Sauce Pasta",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "Manicoti Pasta",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Red Sauce Pasta",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "Four Cheese Tortellini",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"White Sauce Pasta",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "Cheese Ravioli",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Red Sauce Pasta",
-      "storeID":4
+      "storeid":4
     },
     {
       "foodname" : "Crab Ravioli",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Red Sauce Pasta",
-      "storeID":5
+      "storeid":5
     },
     {
       "foodname" : "Casoncelli bergamaschi",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"White Sauce Pasta",
-      "storeID":5
+      "storeid":5
     },
     {
       "foodname" : "Chili con Carne",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Chili",
-      "storeID":5
+      "storeid":5
     },
     {
       "foodname" : "Chili Verde",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Chili",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "White Chicken Chili",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Chili",
-      "storeID":2
+      "storeid":2
     },
     {
       "foodname" : "Pork Chops",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Pork",
-      "storeID":1
+      "storeid":1
     },{
       "foodname" : "Pork Casserole",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Pork",
-      "storeID":5
+      "storeid":5
     },{
       "foodname" : "Pulled Pork Sandwiches",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Pork",
-      "storeID":5
+      "storeid":5
     },
     {
       "foodname" : "Pork Spareribs",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Ribs",
-      "storeID":5
+      "storeid":5
     },
     {
       "foodname" : "Chinese Spareribs",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Ribs",
-      "storeID":4
+      "storeid":4
     },
     {
       "foodname" : "Turkey with Gravy & Stuffing",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Turkey",
-      "storeID":3
+      "storeid":3
     },
     {
       "foodname" : "Turkey Breasts",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Turkey",
-      "storeID":4
+      "storeid":4
     },
     {
       "foodname" : "Lamb Shanks",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Lamb",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "Lamp Chops",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Lamb",
-      "storeID":2
+      "storeid":2
     },
     {
       "foodname" : "Chocolate Cake",
       "foodmealdesignation":"Dessert",
       "foodmealtype":"Chocolate",
-      "storeID":5
+      "storeid":5
     },
     {
       "foodname" : "See's Candy",
       "foodmealdesignation":"Dessert",
       "foodmealtype":"Chocolate",
-      "storeID":2
+      "storeid":2
     },
     {
       "foodname" : "Chocolate Pudding",
       "foodmealdesignation":"Dessert",
       "foodmealtype":"Chocolate",
-      "storeID":4
+      "storeid":4
     },
     {
       "foodname" : " Tiramisu",
       "foodmealdesignation":"Dessert",
       "foodmealtype":"Chocolate",
-      "storeID":5
+      "storeid":5
     },
     {
       "foodname" : "Cherry Pastry Pie",
       "foodmealdesignation":"Dessert",
       "foodmealtype":"Chocolate",
-      "storeID":4
+      "storeid":4
     },
     {
       "foodname" : "Salted Caramel Chocolate Profiteroles",
       "foodmealdesignation":"Dessert",
       "foodmealtype":"Chocolate",
-      "storeID":2
+      "storeid":2
     },
     {
       "foodname" : "Omlette Du Formage",
       "foodmealdesignation":"Breakfast",
       "foodmealtype":"Breakfast",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "Bacon and Cheese Quiche",
       "foodmealdesignation":"Breakfast",
       "foodmealtype":"Breakfast",
-      "storeID":3
+      "storeid":3
     },
     {
       "foodname" : "Apple Crepes",
       "foodmealdesignation":"Breakfast",
       "foodmealtype":"Breakfast",
-      "storeID":4
+      "storeid":4
     },
     {
       "foodname" : "Prosciutto & parmesan croissants",
       "foodmealdesignation":"Breakfast",
       "foodmealtype":"Breakfast",
-      "storeID":5
+      "storeid":5
     },
     {
       "foodname" : "Eggs Benedict",
       "foodmealdesignation":"Breakfast",
       "foodmealtype":"Breakfast",
-      "storeID":1
+      "storeid":1
     },
     {
       "foodname" : "Smoked Salmon",
       "foodmealdesignation":"Breakfast",
       "foodmealtype":"Breakfast",
-      "storeID":2
+      "storeid":2
     }
 
 
@@ -491,27 +491,27 @@
     {
       "winery_id" : 1,
       "wineryname" : "Ruby Hill",
-      "winevarietal" : "Cabernet Sauvignon, Zinfandel, Malbec, Sangiovese, Petite Sirah, Barbera, Red Blends, Chardonnay, Sparkling Wine, Sauvignon Blanc Reserve",
+      "wineryvarietals" : "Cabernet Sauvignon, Zinfandel, Malbec, Sangiovese, Petite Sirah, Barbera, Red Blends, Chardonnay, Sparkling Wine, Sauvignon Blanc Reserve",
       "wineryaddress" : "400 Vineyard Ave, Pleasanton, CA 94566"
     },
     {
       "winery_id" : 2,
       "wineryname" : "Cakebread Cellars",
-      "winevarietal" : "Pinot Noir, Cabernet Sauvignon, Sirah, Merlot, Sauvignon Blanc, Chardonnay",
+      "wineryvarietals" : "Pinot Noir, Cabernet Sauvignon, Sirah, Merlot, Sauvignon Blanc, Chardonnay",
       "wineryaddress" : "8300 St Helena Hwy, Napa, CA 94558"
     },
     {
       "winery_id" : 3,
       "wineryname" : "Wente Vineyards",
-      "winevarietal" : "Pinot Noir, Cabernet Sauvignon, Sirah, Merlot, Sauvignon Blanc, Chardonnay",
+      "wineryvarietals" : "Pinot Noir, Cabernet Sauvignon, Sirah, Merlot, Sauvignon Blanc, Chardonnay",
       "wineryaddress" : "5565 Tesla Rd, Livermore, CA 94550"
     },
 
     {
       "winery_id" : 4,
       "wineryname" : "Domaine Carneros",
-      "winevarietal" : "Sparkling Wine, Chardonnay,Pinot Noir",
-      "wineaddress" : "1240 Duhig Rd, Napa, CA 94559"
+      "wineryvarietals" : "Sparkling Wine, Chardonnay,Pinot Noir",
+      "wineryaddress" : "1240 Duhig Rd, Napa, CA 94559"
     }
   ],
 
