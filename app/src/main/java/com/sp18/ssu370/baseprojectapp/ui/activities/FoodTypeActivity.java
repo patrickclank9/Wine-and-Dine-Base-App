@@ -14,7 +14,7 @@ public class FoodTypeActivity extends AppCompatActivity {
     private ImageButton foodsearchbutton2;
     private ImageButton foodsearchbutton3;
     private ImageButton foodsearchbutton4;
-    private ImageButton foodsearchbutton5;
+
     private ImageButton profilebutton;
     private ImageButton mainactivitybutton;
     private ImageButton mapbutton;
@@ -56,13 +56,6 @@ public class FoodTypeActivity extends AppCompatActivity {
             }
         });
 
-        foodsearchbutton5 = findViewById(R.id.toFoodSearchActivity5);                                   // Wine Search button  Snack
-        foodsearchbutton5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(FoodTypeActivity.this, FoodSearchActivity.class));
-            }
-        });
 
         profilebutton = findViewById(R.id.toProfileActivity);                                          // Profile button
         profilebutton.setOnClickListener(new View.OnClickListener() {
