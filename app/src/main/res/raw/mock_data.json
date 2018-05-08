@@ -1,0 +1,551 @@
+{
+  "wines": [
+    {
+      "winename": "Grateful Red" ,
+      "winecolor": "Red",
+      "winevarietal":"Red Blend" ,
+      "wineyear": 2009,
+      "wineABV":14.8,
+      "wineryid":1
+    },
+    {
+      "winename": "Jewel Collection",
+      "winecolor": "Red",
+      "winevarietal": "Malbec",
+      "wineyear": 2015,
+      "wineABV":14.1,
+      "wineryid":1
+    },
+    {
+      "winename":"Jewel Collection",
+      "winecolor": "Red",
+      "winevarietal": "Zinfandel",
+      "wineyear": 2013,
+      "wineABV":16,
+      "wineryid":1
+    },
+    {
+      "winename": "Jewel Collection",
+      "winecolor": "White",
+      "winevarietal": "Chardonnay",
+      "wineyear": 2015,
+      "wineABV":14.4,
+      "wineryid":1
+    },
+    {
+      "winename": "Solera In Perpetuum",
+      "winecolor": "Red",
+      "winevarietal": "Zinfandel",
+      "wineyear": 2002,
+      "wineABV": 18.5,
+      "wineryid":1
+    },
+    {
+      "winename": "Ruby Hill Cabernet Sauvignon",
+      "winecolor": "Red",
+      "winevarietal": "Cabernet Sauvignon",
+      "wineyear": 2015,
+      "wineABV": 13.5,
+      "wineryid":1
+    },
+    {
+      "winename": "Ruby Hill Chardonnay",
+      "winecolor": "White",
+      "winevarietal": "Chardonnay",
+      "wineyear": 2016,
+      "wineABV": 14.1,
+      "wineryid":1
+    },
+    {
+      "winename": "Ruby Sparkling Wine",
+      "winecolor": "Sparkling",
+      "winevarietal": "Chardonnay",
+      "wineyear": 2017,
+      "wineABV":11.0,
+      "wineryid":1
+    },
+    {
+      "winename": "Ruby Hill Sauvignon Blanc",
+      "winecolor": "White",
+      "winevarietal": "Sauvignon Blanc",
+      "wineyear": 2016,
+      "wineABV": 15.2,
+      "wineryid":1
+    },
+    {
+      "winename": "Cakebread Sauvignon Blanc",
+      "winecolor": "White",
+      "winevarietal": "Sauvignon Blanc",
+      "wineyear": 2016,
+      "wineABV": 13.8,
+      "wineryid":2
+    },
+    {
+      "winename": "Cakebread Chardonnay",
+      "winecolor": "White",
+      "winevarietal": "Chardonnay",
+      "wineyear": 2015,
+      "wineABV":14.3,
+      "wineryid":2
+    },
+    {
+      "winename": "Cakebread Chardonnay Reserve",
+      "winecolor": "White",
+      "winevarietal": "Chardonnay",
+      "wineyear": 2015,
+      "wineABV":14.5,
+      "wineryid":2
+    },
+    {
+      "winename": "Cakebread Merlot",
+      "winecolor": "Red",
+      "winevarietal": "Merlot",
+      "wineyear": 2014,
+      "wineABV": 14.9,
+      "wineryid":2
+    },
+    {
+      "winename": "Vin De Porche",
+      "winecolor": "Rose",
+      "winevarietal": "Pinot Noir",
+      "wineyear": 2017,
+      "wineABV": 13.1,
+      "wineryid":2
+    },
+    {
+      "winename": "Pheonix",
+      "winecolor": "Rose",
+      "winevarietal": "Cabernet Sauvignon",
+      "wineyear": 2017,
+      "wineABV": 13.8,
+      "wineryid":2
+    },
+    {
+      "winename": "Guajolote",
+      "winecolor": "Red",
+      "winevarietal": "Blend",
+      "wineyear": 2014,
+      "wineABV": 14.7,
+      "wineryid":2
+    },
+    {
+      "winename": "Rubaiyat",
+      "winecolor": "Red",
+      "winevarietal": "Petite Sirah",
+      "wineyear": 2016,
+      "wineABV": 15.1,
+      "wineryid":2
+    },
+    {
+      "winename": "Dancing Bear Wine",
+      "winecolor": "Red",
+      "winevarietal": "Cabernet Sauvignon",
+      "wineyear": 2016,
+      "wineABV": 15.1,
+      "wineryid":2
+    },
+    {
+      "winename": "Wente Reisling",
+      "winecolor": "Rose",
+      "winevarietal": "Reisling",
+      "wineyear": 2016,
+      "wineABV": 13.0,
+      "wineryid":3
+    },
+    {
+      "winename": "Wente Small Lot Rose",
+      "winecolor": "Rose",
+      "winevarietal": "Pinto Noir",
+      "wineyear": 2017,
+      "wineABV": 13.5,
+      "wineryid":3
+    },
+    {
+      "winename": "Wente Barbera",
+      "winecolor": "Rose",
+      "winevarietal": "Barbera",
+      "wineyear": 2016,
+      "wineABV": 14.2,
+      "wineryid":3
+    },
+    {
+      "winename": "Eric's Chardonnay",
+      "winecolor": "White",
+      "winevarietal": "Chardonnay",
+      "wineyear": 2017,
+      "wineABV": 13.5,
+      "wineryid":3
+    },
+    {
+      "winename": "Riva Ranch Chardonnay",
+      "winecolor": "White",
+      "winevarietal": "Chardonnay",
+      "wineyear": 2016,
+      "wineABV": 14.5,
+      "wineryid":3
+    },
+    {
+      "winename": "Wente Brut",
+      "winecolor": "White",
+      "winevarietal": "Brut",
+      "wineyear": 2015,
+      "wineABV": 12.5,
+      "wineryid":3
+    },
+    {
+      "winename": "Wente Cabernet Sauvignon",
+      "winecolor": "Red",
+      "winevarietal": "Cabernet Sauvignon",
+      "wineyear": 2014,
+      "wineABV": 14.5,
+      "wineryid":3
+    },
+    {
+      "winename": "Le Rêve Blanc de Blancs",
+      "winecolor":"Sparkling",
+      "winevarietal":"Chardonnay",
+      "wineyear": 2011,
+      "wineABV": 12.1,
+      "wineryid": 4
+    },
+    {
+      "winename": "Avant-Garde Pinot Noir Rosé",
+      "winecolor":"Rose",
+      "winevarietal":"Pinot Noir",
+      "wineyear": 2017,
+      "wineABV": 13.0,
+      "wineryid": 4
+    },
+    {
+      "winename": "Estate Brut Cuvée",
+      "winecolor":"Sparkling",
+      "winevarietal":"Chardonnay",
+      "wineyear": 2012,
+      "wineABV": 12.1,
+      "wineryid":4
+    },
+    {
+      "winename": "Vermeil-Demi-Sec",
+      "winecolor":"Sparkling",
+      "winevarietal":"Brut",
+      "wineyear": 2013,
+      "wineABV": 12.0,
+      "wineryid":4
+    },
+    {
+      "winename":"Le Ciel Serein Pinot Noir",
+      "winecolor":"Red",
+      "winevarietal":"Pinot Noir",
+      "wineyear": 2015,
+      "wineABV": 14.5,
+      "wineryid": 4
+    }
+  ],
+
+  "foods": [
+    {
+      "foodname" : "Atlantic Salmon",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Fish",
+      "storeID":1
+
+    },
+    {
+      "foodname" : "Baked Catfish",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Fish",
+      "storeID":2
+    },
+    {
+      "foodname" : "Codfish",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Fish",
+      "storeID":3
+    },
+    {
+      "foodname" : "Tri-Tip Steak",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Steak",
+      "storeID":1
+    },
+    {
+      "foodname" : "Strip Steak",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Steak",
+      "storeID":2
+    },
+    {
+      "foodname" : "Angus Steak",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Steak",
+      "storeID":3
+    },
+    {
+      "foodname" : "Prime Rib",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Steak",
+      "storeID":4
+    },
+    {
+      "foodname" : "Roasted Garlic Chicken",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Chicken",
+      "storeID":1
+    },
+    {
+      "foodname" : "Parmesan Chicken",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Chicken",
+      "storeID":2
+    },
+    {
+      "foodname" : "Chicken Breast",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Chicken",
+      "storeID":3
+    },
+    {
+      "foodname" : "Chicken Alfredo Pasta",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"White Sauce Pasta",
+      "storeID":1
+    },
+    {
+      "foodname" : "Manicoti Pasta",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Red Sauce Pasta",
+      "storeID":1
+    },
+    {
+      "foodname" : "Four Cheese Tortellini",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"White Sauce Pasta",
+      "storeID":1
+    },
+    {
+      "foodname" : "Cheese Ravioli",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Red Sauce Pasta",
+      "storeID":4
+    },
+    {
+      "foodname" : "Crab Ravioli",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Red Sauce Pasta",
+      "storeID":5
+    },
+    {
+      "foodname" : "Casoncelli bergamaschi",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"White Sauce Pasta",
+      "storeID":5
+    },
+    {
+      "foodname" : "Chili con Carne",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Chili",
+      "storeID":5
+    },
+    {
+      "foodname" : "Chili Verde",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Chili",
+      "storeID":1
+    },
+    {
+      "foodname" : "White Chicken Chili",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Chili",
+      "storeID":2
+    },
+    {
+      "foodname" : "Pork Chops",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Pork",
+      "storeID":1
+    },{
+      "foodname" : "Pork Casserole",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Pork",
+      "storeID":5
+    },{
+      "foodname" : "Pulled Pork Sandwiches",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Pork",
+      "storeID":5
+    },
+    {
+      "foodname" : "Pork Spareribs",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Ribs",
+      "storeID":5
+    },
+    {
+      "foodname" : "Chinese Spareribs",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Ribs",
+      "storeID":4
+    },
+    {
+      "foodname" : "Turkey with Gravy & Stuffing",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Turkey",
+      "storeID":3
+    },
+    {
+      "foodname" : "Turkey Breasts",
+      "foodmealdesignation":"Dinner",
+      "foodmealtype":"Turkey",
+      "storeID":4
+    },
+    {
+      "foodname" : "Lamb Shanks",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Lamb",
+      "storeID":1
+    },
+    {
+      "foodname" : "Lamp Chops",
+      "foodmealdesignation":"Lunch",
+      "foodmealtype":"Lamb",
+      "storeID":2
+    },
+    {
+      "foodname" : "Chocolate Cake",
+      "foodmealdesignation":"Dessert",
+      "foodmealtype":"Chocolate",
+      "storeID":5
+    },
+    {
+      "foodname" : "See's Candy",
+      "foodmealdesignation":"Dessert",
+      "foodmealtype":"Chocolate",
+      "storeID":2
+    },
+    {
+      "foodname" : "Chocolate Pudding",
+      "foodmealdesignation":"Dessert",
+      "foodmealtype":"Chocolate",
+      "storeID":4
+    },
+    {
+      "foodname" : " Tiramisu",
+      "foodmealdesignation":"Dessert",
+      "foodmealtype":"Chocolate",
+      "storeID":5
+    },
+    {
+      "foodname" : "Cherry Pastry Pie",
+      "foodmealdesignation":"Dessert",
+      "foodmealtype":"Chocolate",
+      "storeID":4
+    },
+    {
+      "foodname" : "Salted Caramel Chocolate Profiteroles",
+      "foodmealdesignation":"Dessert",
+      "foodmealtype":"Chocolate",
+      "storeID":2
+    },
+    {
+      "foodname" : "Omlette Du Formage",
+      "foodmealdesignation":"Breakfast",
+      "foodmealtype":"Breakfast",
+      "storeID":1
+    },
+    {
+      "foodname" : "Bacon and Cheese Quiche",
+      "foodmealdesignation":"Breakfast",
+      "foodmealtype":"Breakfast",
+      "storeID":3
+    },
+    {
+      "foodname" : "Apple Crepes",
+      "foodmealdesignation":"Breakfast",
+      "foodmealtype":"Breakfast",
+      "storeID":4
+    },
+    {
+      "foodname" : "Prosciutto & parmesan croissants",
+      "foodmealdesignation":"Breakfast",
+      "foodmealtype":"Breakfast",
+      "storeID":5
+    },
+    {
+      "foodname" : "Eggs Benedict",
+      "foodmealdesignation":"Breakfast",
+      "foodmealtype":"Breakfast",
+      "storeID":1
+    },
+    {
+      "foodname" : "Smoked Salmon",
+      "foodmealdesignation":"Breakfast",
+      "foodmealtype":"Breakfast",
+      "storeID":2
+    }
+
+
+
+  ],
+
+  "winery":[
+    {
+      "winery_id" : 1,
+      "wineryname" : "Ruby Hill",
+      "wineryvarietals" : "Cabernet Sauvignon, Zinfandel, Malbec, Sangiovese, Petite Sirah, Barbera, Red Blends, Chardonnay, Sparkling Wine, Sauvignon Blanc Reserve",
+      "wineryaddress" : "400 Vineyard Ave, Pleasanton, CA 94566"
+    },
+    {
+      "winery_id" : 2,
+      "wineryname" : "Cakebread Cellars",
+      "wineryvarietals" : "Pinot Noir, Cabernet Sauvignon, Sirah, Merlot, Sauvignon Blanc, Chardonnay",
+      "wineryaddress" : "8300 St Helena Hwy, Napa, CA 94558"
+    },
+    {
+      "winery_id" : 3,
+      "wineryname" : "Wente Vineyards",
+      "wineryvarietals" : "Pinot Noir, Cabernet Sauvignon, Sirah, Merlot, Sauvignon Blanc, Chardonnay",
+      "wineryaddress" : "5565 Tesla Rd, Livermore, CA 94550"
+    },
+
+    {
+      "winery_id" : 4,
+      "wineryname" : "Domaine Carneros",
+      "wineryvarietals" : "Sparkling Wine, Chardonnay,Pinot Noir",
+      "wineryaddress" : "1240 Duhig Rd, Napa, CA 94559"
+    }
+  ],
+
+  "store":[
+    {
+      "store_id": 1,
+      "storename":"Safeway",
+      "storespecialty":"Grocery Store",
+      "storeaddress":"6340 Commerce Blvd, Rohnert Park, CA 94928"
+
+    },
+    {
+      "store_id": 2,
+      "storename":"Walmart",
+      "storespecialty":"Grocery Store",
+      "storeaddress": "4625 Redwood Dr, Rohnert Park, CA 94928"
+    },
+    {
+      "store_id": 3,
+      "storename":"Grocery Outlet",
+      "storespecialty":"Grocery Store",
+      "storeaddress": "6335 Commerce Blvd, Rohnert Park, CA 94928"
+    },
+    {
+      "store_id": 4,
+      "storename":"Raley's",
+      "storespecialty":"Grocery Store",
+      "storeaddress":"100 Raleys Towne Center, Rohnert Park, CA 94928"
+    },
+    {
+      "store_id": 5,
+      "storename":"FoodMaxx",
+      "storespecialty":"Grocery Store",
+      "storeaddress":"605 Rohnert Park Expy, Rohnert Park, CA 94928"
+    }
+  ]
+}

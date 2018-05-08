@@ -57,21 +57,20 @@
         />
 
 
-
-
     <ImageButton
         android:id="@+id/toProfileActivity"
         android:layout_width="125dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_profile2"
-        android:scaleType="fitCenter"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toStartOf="parent"
         android:background="@android:color/white"
-        />
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_profile2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/toMainActivity"

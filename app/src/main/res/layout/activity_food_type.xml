@@ -73,18 +73,7 @@
         android:background="@android:color/transparent"
         />
 
-    <ImageButton
-        android:id="@+id/toFoodSearchActivity5"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:src="@mipmap/ic_crakersandcheese_round"
-        android:scaleType="fitCenter"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/transparent"
-        />
+
 
     <ImageButton
         android:id="@+id/toProfileActivity"
