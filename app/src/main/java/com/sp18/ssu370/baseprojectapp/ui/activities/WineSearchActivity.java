@@ -11,7 +11,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.sp18.ssu370.baseprojectapp.R;
-import com.sp18.ssu370.baseprojectapp.network.BaseAsyncTask;
 import com.sp18.ssu370.baseprojectapp.search.WineSearchAdapter;
 
 public class WineSearchActivity extends AppCompatActivity {
@@ -22,7 +21,6 @@ public class WineSearchActivity extends AppCompatActivity {
     private ImageButton mapbutton;
     private EditText searchEditText;
     private Button searchButton;
-    private BaseAsyncTask task;
     private LinearLayoutManager linearLayoutManager;
     private WineSearchAdapter adapter;
     private RecyclerView wineResultList;

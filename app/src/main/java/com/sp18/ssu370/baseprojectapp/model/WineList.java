@@ -4,11 +4,17 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-public class WineList {
-    @SerializedName("matches")
-    private ArrayList<Wine> Wines;
+import Database.WineEntity;
+import Database.WineAndDineDatabase;
 
-    public ArrayList<Wine> getWines() {
+public class WineList {
+    private ArrayList<WineEntity> Wines;
+
+    public ArrayList<WineEntity> getWines() {
         return Wines;
+    }
+
+    public void setWines(WineAndDineDatabase data, String Winetype) {
+        Wines = new ArrayList<WineEntity>(data.myDao().getWineVarietal(Winetype));
     }
 }

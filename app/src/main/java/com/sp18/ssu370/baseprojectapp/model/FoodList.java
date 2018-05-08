@@ -3,16 +3,19 @@ package com.sp18.ssu370.baseprojectapp.model;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import Database.FoodEntity;
+import Database.WineAndDineDatabase;
 
 public class FoodList {
-    //@SerializedName("matches")
-    private ArrayList<Food> Foods = new ArrayList<Food>(){{
-        for (int i = 0; i < 30; i++) {
-            add(new Food());
-        }
-    }};
+    private ArrayList<FoodEntity> Foods;
 
-    public ArrayList<Food> getFoods() {
+    public ArrayList<FoodEntity> getFoods() {
         return Foods;
+    }
+
+    public void setFoods(WineAndDineDatabase data, String foodtype) {
+        Foods = new ArrayList<FoodEntity>(data.myDao().getFoodType(foodtype));
     }
 }

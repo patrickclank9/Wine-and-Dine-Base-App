@@ -1,4 +1,4 @@
-package com.sp18.ssu370.baseprojectapp.ui.activities;
+package com.sp18.ssu370.baseprojectapp0..ui.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,10 +13,11 @@ import android.widget.ImageButton;
 import com.sp18.ssu370.baseprojectapp.R;
 import com.sp18.ssu370.baseprojectapp.model.Food;
 import com.sp18.ssu370.baseprojectapp.model.FoodList;
-import com.sp18.ssu370.baseprojectapp.network.FoodSearchAsyncTask;
 import com.sp18.ssu370.baseprojectapp.search.FoodSearchAdapter;
 
 import org.parceler.Parcels;
+
+import Database.FoodEntity;
 
 public class FoodSearchActivity extends AppCompatActivity {
 
@@ -26,7 +27,6 @@ public class FoodSearchActivity extends AppCompatActivity {
     private ImageButton mapbutton;
     private EditText searchEditText;
     private Button searchButton;
-    private FoodSearchAsyncTask task;
     private LinearLayoutManager linearLayoutManager;
     private FoodSearchAdapter adapter;
     private RecyclerView foodResultList;
@@ -35,6 +35,7 @@ public class FoodSearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_search);
+
 
         /*foodinfobutton = findViewById(R.id.toFoodInfoActivity);                                   // Food Search button  Red
         foodinfobutton.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +81,7 @@ public class FoodSearchActivity extends AppCompatActivity {
 
                 adapter.setFoodItemClickListener(new FoodSearchAdapter.FoodItemClickListener() {
                     @Override
-                    public void onFoodItemClicked(Food selectedItem) {
+                    public void onFoodItemClicked(FoodEntity selectedItem) {
                         Intent navIntent = new Intent(FoodSearchActivity.this, FoodInfoActivity.class);
                         navIntent.putExtra(FoodInfoActivity.FOOD_EXTRA_KEY, Parcels.wrap(selectedItem));
                         startActivity(navIntent);

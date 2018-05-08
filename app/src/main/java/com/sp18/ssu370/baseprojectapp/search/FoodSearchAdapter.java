@@ -11,12 +11,14 @@ import com.sp18.ssu370.baseprojectapp.search.FoodItemViewHolder;
 
 import java.util.ArrayList;
 
+import Database.FoodEntity;
+
 public class FoodSearchAdapter extends RecyclerView.Adapter<FoodItemViewHolder>{
 
-    private ArrayList<Food> bindableCollection;
+    private ArrayList<FoodEntity> bindableCollection;
     private FoodItemClickListener FoodItemClickListener;
 
-    public FoodSearchAdapter(ArrayList<Food> collection) {
+    public FoodSearchAdapter(ArrayList<FoodEntity> collection) {
         this.bindableCollection = collection;
     }
 
@@ -32,7 +34,7 @@ public class FoodSearchAdapter extends RecyclerView.Adapter<FoodItemViewHolder>{
 
     @Override
     public void onBindViewHolder(FoodItemViewHolder holder, int position) {
-        Food item = bindableCollection.get(position);
+        FoodEntity item = bindableCollection.get(position);
         holder.setListener(new FoodItemViewHolder.OnItemClickedListener() {
             @Override
             public void onItemClicked(int position) {
@@ -47,6 +49,8 @@ public class FoodSearchAdapter extends RecyclerView.Adapter<FoodItemViewHolder>{
 
     @Override
     public int getItemCount() {
+        if (this.bindableCollection == null)
+            return 0;
         return this.bindableCollection.size();
     }
 
@@ -55,6 +59,6 @@ public class FoodSearchAdapter extends RecyclerView.Adapter<FoodItemViewHolder>{
     }
 
     public interface FoodItemClickListener {
-        void onFoodItemClicked(Food selectedItem);
+        void onFoodItemClicked(FoodEntity selectedItem);
     }
 }

@@ -11,9 +11,10 @@ import com.sp18.ssu370.baseprojectapp.R;
 
 import com.sp18.ssu370.baseprojectapp.model.Food;
 
+import Database.FoodEntity;
+
 public class FoodItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     private TextView FoodName;
-    private ImageView FoodThumbnail;
     private OnItemClickedListener listener;
 
 
@@ -22,17 +23,11 @@ public class FoodItemViewHolder extends RecyclerView.ViewHolder implements View.
         super(itemView);
 
         FoodName = (TextView)itemView.findViewById(R.id.food_name);
-        FoodThumbnail = (ImageView)itemView.findViewById(R.id.food_thumbnail);
         FoodName.setOnClickListener(this);
-        FoodThumbnail.setOnClickListener(this);
     }
 
-    public void bindView(Food item) {
-        FoodName.setText(item.getName());
-
-        Glide.with(this.itemView)
-                .load(item.getThumbnailSources().get(0))
-                .into(FoodThumbnail);
+    public void bindView(FoodEntity item) {
+        FoodName.setText(item.getFoodname());
     }
 
     public void setListener(OnItemClickedListener listener) {
