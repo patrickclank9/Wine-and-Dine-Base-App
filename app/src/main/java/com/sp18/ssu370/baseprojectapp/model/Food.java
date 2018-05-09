@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import Database.FoodEntity;
 
 public class Food {
+
     private String foodname;
 
     private String source;
