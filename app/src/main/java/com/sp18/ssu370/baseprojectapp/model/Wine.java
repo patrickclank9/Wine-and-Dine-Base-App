@@ -8,21 +8,15 @@ import org.parceler.Parcel;
 
 import java.util.ArrayList;
 
-@Parcel
 public class Wine {
-    @SerializedName("wineName")
     private String name;
 
-    @SerializedName("sourceDisplayName")
     private String source;
 
-    @SerializedName("id")
     private String WineId;
 
-    @SerializedName("complements")
     private ArrayList<String> complements;
 
-    @SerializedName("smallImageUrls")
     private ArrayList<String> thumbnailSources;
 
     public String getName() {

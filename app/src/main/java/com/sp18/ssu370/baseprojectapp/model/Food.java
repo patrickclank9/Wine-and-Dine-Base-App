@@ -12,24 +12,18 @@ import java.util.ArrayList;
 import Database.FoodEntity;
 
 public class Food {
-    private String name = "test Food";
+    private String foodname;
 
-    private String source = "test display name";
+    private String source;
 
-    private String FoodId = "123456";
+    private String FoodId;
 
-    private ArrayList<String> complements = new ArrayList<String>() {{
-        add("test item 1");
-        add("test item 2");
-        add("test item 3");
-    }};
+    private ArrayList<String> complements;
 
-    private ArrayList<String> thumbnailSources  = new ArrayList<String>() {{
-        add("https://i.imgur.com/vtjlMSR.jpg");
-    }};
+    private ArrayList<String> thumbnailSources;
 
-    public Food(String name, String source, String FoodId, ArrayList<String> complements, ArrayList<String> thumbnailSources){
-        this.name = name;
+    public Food(String foodname, String source, String FoodId, ArrayList<String> complements, ArrayList<String> thumbnailSources){
+        this.foodname = foodname;
         this.source = source;
         this.FoodId = FoodId;
         this.complements = complements;
@@ -37,7 +31,7 @@ public class Food {
     }
 
     public String getName() {
-        return name;
+        return foodname;
     }
 
     public String getSource() {

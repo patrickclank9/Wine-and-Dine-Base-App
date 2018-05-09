@@ -20,7 +20,7 @@ import org.parceler.Parcels;
 
 import java.util.ArrayList;
 
-public class FoodSearchActivity extends AppCompatActivity {
+public class FoodSearchActivity2 extends AppCompatActivity {
 
     private Button foodinfobutton;
     private ImageButton profilebutton;
@@ -50,15 +50,13 @@ public class FoodSearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FoodList foods = new FoodList();
-
-                foods.addFood(new Food("cheese", "food info", "5156", new ArrayList<String>(){{
+                foods.addFood(new Food("cheesedsgdsfgsd", "food info", "5156", new ArrayList<String>(){{
                     add("crackers");
                     add("peanut butter");
                 }}, new ArrayList<String>(){{
                     add("http://www.howmuchisin.com/produce_converters_app/vegetables_large/cheese.png");
                 }}));
-
-                foods.addFood(new Food("eggs", "food info", "5156", new ArrayList<String>(){{
+                foods.addFood(new Food("eggssdfgdsfg", "food info", "5156", new ArrayList<String>(){{
                     add("crackers");
                     add("peanut butter");
                 }}, new ArrayList<String>(){{
@@ -70,7 +68,7 @@ public class FoodSearchActivity extends AppCompatActivity {
                 adapter.setFoodItemClickListener(new FoodSearchAdapter.FoodItemClickListener() {
                     @Override
                     public void onFoodItemClicked(Food selectedItem) {
-                        Intent navIntent = new Intent(FoodSearchActivity.this, FoodInfoActivity.class);
+                        Intent navIntent = new Intent(FoodSearchActivity2.this, FoodInfoActivity.class);
                         //navIntent.putExtra(FoodInfoActivity.FOOD_EXTRA_KEY, Parcels.wrap(selectedItem));
                         startActivity(navIntent);
                     }
@@ -83,7 +81,7 @@ public class FoodSearchActivity extends AppCompatActivity {
         profilebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FoodSearchActivity.this, ProfileActivity.class));
+                startActivity(new Intent(FoodSearchActivity2.this, ProfileActivity.class));
             }
         });
 
@@ -91,7 +89,7 @@ public class FoodSearchActivity extends AppCompatActivity {
         mainactivitybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FoodSearchActivity.this, MainActivity.class));
+                startActivity(new Intent(FoodSearchActivity2.this, MainActivity.class));
             }
         });
 
@@ -99,9 +97,10 @@ public class FoodSearchActivity extends AppCompatActivity {
         mapbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FoodSearchActivity.this, MapsActivity.class));
+                startActivity(new Intent(FoodSearchActivity2.this, MapsActivity.class));
             }
         });
 
     }
 }
+
