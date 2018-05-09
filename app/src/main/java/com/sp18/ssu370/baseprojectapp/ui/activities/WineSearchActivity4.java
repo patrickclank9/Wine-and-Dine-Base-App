@@ -19,7 +19,7 @@ import com.sp18.ssu370.baseprojectapp.search.WineSearchAdapter;
 
 import java.util.ArrayList;
 
-public class WineSearchActivity extends AppCompatActivity {
+public class WineSearchActivity4 extends AppCompatActivity {
 
     private Button wineinfobutton;
     private ImageButton profilebutton;
@@ -50,14 +50,14 @@ public class WineSearchActivity extends AppCompatActivity {
             public void onClick(View view) {
                 WineList Wines = new WineList();
 
-                Wines.addWine(new Wine("cheese", "Wine info", "5156", new ArrayList<String>(){{
+                Wines.addWine(new Wine("cheese wine4", "Wine info", "5156", new ArrayList<String>(){{
                     add("crackers");
                     add("peanut butter");
                 }}, new ArrayList<String>(){{
                     add("http://www.howmuchisin.com/produce_converters_app/vegetables_large/cheese.png");
                 }}));
 
-                Wines.addWine(new Wine("eggs", "Wine info", "5156", new ArrayList<String>(){{
+                Wines.addWine(new Wine("egg wine4", "Wine info", "5156", new ArrayList<String>(){{
                     add("crackers");
                     add("peanut butter");
                 }}, new ArrayList<String>(){{
@@ -69,7 +69,7 @@ public class WineSearchActivity extends AppCompatActivity {
                 adapter.setWineItemClickListener(new WineSearchAdapter.WineItemClickListener() {
                     @Override
                     public void onWineItemClicked(Wine selectedItem) {
-                        Intent navIntent = new Intent(WineSearchActivity.this, WineInfoActivity.class);
+                        Intent navIntent = new Intent(WineSearchActivity4.this, WineInfoActivity.class);
                         //navIntent.putExtra(WineInfoActivity.Wine_EXTRA_KEY, Parcels.wrap(selectedItem));
                         startActivity(navIntent);
                     }
@@ -82,7 +82,7 @@ public class WineSearchActivity extends AppCompatActivity {
         profilebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WineSearchActivity.this, ProfileActivity.class));
+                startActivity(new Intent(WineSearchActivity4.this, ProfileActivity.class));
             }
         });
 
@@ -90,7 +90,7 @@ public class WineSearchActivity extends AppCompatActivity {
         mainactivitybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WineSearchActivity.this, MainActivity.class));
+                startActivity(new Intent(WineSearchActivity4.this, MainActivity.class));
             }
         });
 
@@ -98,7 +98,7 @@ public class WineSearchActivity extends AppCompatActivity {
         mapbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WineSearchActivity.this, MapsActivity.class));
+                startActivity(new Intent(WineSearchActivity4.this, MapsActivity.class));
             }
         });
 
