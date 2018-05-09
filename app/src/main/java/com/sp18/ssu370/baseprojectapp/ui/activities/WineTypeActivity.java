@@ -40,7 +40,7 @@ public class WineTypeActivity extends AppCompatActivity {
             }
         });
 
-        winesearchbutton3 = findViewById(R.id.toWineSearchActivity3);                                   // Wine Search button  Rosea
+        winesearchbutton3 = findViewById(R.id.toWineSearchActivity3);                                   // Wine Search button  Rose
         winesearchbutton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

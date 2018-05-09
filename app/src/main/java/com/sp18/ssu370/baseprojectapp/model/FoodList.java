@@ -23,6 +23,13 @@ public class FoodList {
             add("http://fedandfit.com/wp-content/uploads/2018/01/Hard-Boiled-Egg-200x200.jpg");
         }}));
 
+        add(new Food("Name", "food info", "123", new ArrayList<String>(){{
+            add("Test");
+            add("Test2");
+        }}, new ArrayList<String>(){{
+            add("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAA1BMVEUAAACnej3aAAAAPUlEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GadCAABYe850QAAAABJRU5ErkJggg==");
+        }}));
+
     }};
 
     public ArrayList<Food> getFoods() {
