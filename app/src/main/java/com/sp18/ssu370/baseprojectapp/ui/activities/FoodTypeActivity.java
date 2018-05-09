@@ -36,7 +36,7 @@ public class FoodTypeActivity extends AppCompatActivity {
         foodsearchbutton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FoodTypeActivity.this, FoodSearchActivity.class));
+                startActivity(new Intent(FoodTypeActivity.this, FoodSearchActivity2.class));
             }
         });
 
@@ -44,7 +44,7 @@ public class FoodTypeActivity extends AppCompatActivity {
         foodsearchbutton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FoodTypeActivity.this, FoodSearchActivity.class));
+                startActivity(new Intent(FoodTypeActivity.this, FoodSearchActivity3.class));
             }
         });
 
@@ -52,7 +52,7 @@ public class FoodTypeActivity extends AppCompatActivity {
         foodsearchbutton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FoodTypeActivity.this, FoodSearchActivity.class));
+                startActivity(new Intent(FoodTypeActivity.this, FoodSearchActivity4.class));
             }
         });
 

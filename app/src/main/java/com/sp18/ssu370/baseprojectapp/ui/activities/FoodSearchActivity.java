@@ -18,6 +18,8 @@ import com.sp18.ssu370.baseprojectapp.search.FoodSearchAdapter;
 
 import org.parceler.Parcels;
 
+import java.util.ArrayList;
+
 public class FoodSearchActivity extends AppCompatActivity {
 
     private Button foodinfobutton;
@@ -36,14 +38,6 @@ public class FoodSearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_search);
 
-        /*foodinfobutton = findViewById(R.id.toFoodInfoActivity);                                   // Food Search button  Red
-        foodinfobutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(FoodSearchActivity.this, FoodInfoActivity.class));
-            }
-        });*/
-
         searchEditText = (EditText)findViewById(R.id.food_search_edit_text);
         searchButton = (Button)findViewById(R.id.food_search_button);
         foodResultList = (RecyclerView)findViewById(R.id.food_result_list);
@@ -55,28 +49,23 @@ public class FoodSearchActivity extends AppCompatActivity {
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*task = new FoodSearchAsyncTask();
-                task.setCallbackListener(new FoodSearchAsyncTask.OnFoodFetchResponse() {
-                    @Override
-                    public void onCallback(FoodList FoodList) {
-                        adapter = new FoodSearchAdapter(FoodList.getFoods());
+                FoodList foods = new FoodList();
 
-                        adapter.setFoodItemClickListener(new FoodSearchAdapter.FoodItemClickListener() {
-                            @Override
-                            public void onFoodItemClicked(Food selectedItem) {
-                                Intent navIntent = new Intent(FoodSearchActivity.this, FoodInfoActivity.class);
-                                navIntent.putExtra(FoodInfoActivity.FOOD_EXTRA_KEY, Parcels.wrap(selectedItem));
-                                startActivity(navIntent);
-                            }
-                        });
+                foods.addFood(new Food("cheese", "food info", "5156", new ArrayList<String>(){{
+                    add("crackers");
+                    add("peanut butter");
+                }}, new ArrayList<String>(){{
+                    add("http://www.howmuchisin.com/produce_converters_app/vegetables_large/cheese.png");
+                }}));
 
-                        foodResultList.setAdapter(adapter);
-                    }
-                });
+                foods.addFood(new Food("eggs", "food info", "5156", new ArrayList<String>(){{
+                    add("crackers");
+                    add("peanut butter");
+                }}, new ArrayList<String>(){{
+                    add("http://fedandfit.com/wp-content/uploads/2018/01/Hard-Boiled-Egg-200x200.jpg");
+                }}));
 
-                String searchTerms = searchEditText.getText().toString();
-                task.execute(searchTerms);*/
-                adapter = new FoodSearchAdapter(new FoodList().getFoods());
+                adapter = new FoodSearchAdapter(foods.getFoods());
 
                 adapter.setFoodItemClickListener(new FoodSearchAdapter.FoodItemClickListener() {
                     @Override

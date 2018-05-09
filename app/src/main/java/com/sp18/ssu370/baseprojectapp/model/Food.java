@@ -12,7 +12,8 @@ import java.util.ArrayList;
 import Database.FoodEntity;
 
 public class Food {
-    private String name;
+
+    private String foodname;
 
     private String source;
 
@@ -22,8 +23,8 @@ public class Food {
 
     private ArrayList<String> thumbnailSources;
 
-    public Food(String name, String source, String FoodId, ArrayList<String> complements, ArrayList<String> thumbnailSources){
-        this.name = name;
+    public Food(String foodname, String source, String FoodId, ArrayList<String> complements, ArrayList<String> thumbnailSources){
+        this.foodname = foodname;
         this.source = source;
         this.FoodId = FoodId;
         this.complements = complements;
@@ -31,7 +32,7 @@ public class Food {
     }
 
     public String getName() {
-        return name;
+        return foodname;
     }
 
     public String getSource() {

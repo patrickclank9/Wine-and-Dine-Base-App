@@ -6,7 +6,11 @@ import java.util.ArrayList;
 
 public class WineList {
     @SerializedName("matches")
-    private ArrayList<Wine> Wines;
+    private ArrayList<Wine> Wines = new ArrayList<Wine>();
+
+    public void addWine(Wine wine){
+        Wines.add(wine);
+    }
 
     public ArrayList<Wine> getWines() {
         return Wines;

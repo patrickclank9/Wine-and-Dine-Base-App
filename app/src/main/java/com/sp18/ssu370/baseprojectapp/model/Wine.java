@@ -8,25 +8,27 @@ import org.parceler.Parcel;
 
 import java.util.ArrayList;
 
-@Parcel
 public class Wine {
-    @SerializedName("wineName")
-    private String name;
+    private String winename;
 
-    @SerializedName("sourceDisplayName")
     private String source;
 
-    @SerializedName("id")
     private String WineId;
 
-    @SerializedName("complements")
     private ArrayList<String> complements;
 
-    @SerializedName("smallImageUrls")
     private ArrayList<String> thumbnailSources;
 
+    public Wine(String foodname, String source, String FoodId, ArrayList<String> complements, ArrayList<String> thumbnailSources){
+        this.winename = foodname;
+        this.source = source;
+        this.WineId = FoodId;
+        this.complements = complements;
+        this.thumbnailSources = thumbnailSources;
+    }
+
     public String getName() {
-        return name;
+        return winename;
     }
 
     public String getSource() {

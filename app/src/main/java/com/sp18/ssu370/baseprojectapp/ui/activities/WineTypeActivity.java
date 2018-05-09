@@ -36,7 +36,7 @@ public class WineTypeActivity extends AppCompatActivity {
         winesearchbutton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WineTypeActivity.this, WineSearchActivity.class));
+                startActivity(new Intent(WineTypeActivity.this, WineSearchActivity2.class));
             }
         });
 
@@ -44,7 +44,7 @@ public class WineTypeActivity extends AppCompatActivity {
         winesearchbutton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WineTypeActivity.this, WineSearchActivity.class));
+                startActivity(new Intent(WineTypeActivity.this, WineSearchActivity3.class));
             }
         });
 
@@ -53,7 +53,7 @@ public class WineTypeActivity extends AppCompatActivity {
         winesearchbutton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WineTypeActivity.this, WineSearchActivity.class));
+                startActivity(new Intent(WineTypeActivity.this, WineSearchActivity4.class));
             }
         });
 

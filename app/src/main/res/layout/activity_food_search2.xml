@@ -4,40 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.WineSearchActivity"
+    tools:context=".ui.activities.FoodSearchActivity2">
     android:background="@drawable/vineyards40">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search Screen"
+        android:text="Food Search Screen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--<Button
+        android:id="@+id/toFoodInfoActivity"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Information on a wine"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />-->
     <EditText
-        android:id="@+id/wine_search_edit_text"
+        android:id="@+id/food_search_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Search terms here                         " />
 
     <Button
-        android:id="@+id/wine_search_button"
+        android:id="@+id/food_search_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="196dp"
         android:text="Search"
-        app:layout_constraintLeft_toRightOf="@+id/wine_search_edit_text"
+        app:layout_constraintLeft_toRightOf="@+id/food_search_edit_text"
         tools:layout_editor_absoluteX="296dp" />
 
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/wine_result_list"
+        android:id="@+id/food_result_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/wine_search_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/food_search_edit_text"
         app:layout_constraintBottom_toTopOf="@id/toMainActivity">
 
     </android.support.v7.widget.RecyclerView>
