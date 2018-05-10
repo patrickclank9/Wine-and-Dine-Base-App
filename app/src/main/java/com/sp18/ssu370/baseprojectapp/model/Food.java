@@ -46,6 +46,14 @@ public class Food {
         return complements;
     }
 
+    public String getComplementsString() {
+        String listString = "";
+        for (String s : complements) {
+            listString += s + "\n";
+        }
+        return listString;
+    }
+
     public ArrayList<String> getThumbnailSources() {
         return thumbnailSources;
     }

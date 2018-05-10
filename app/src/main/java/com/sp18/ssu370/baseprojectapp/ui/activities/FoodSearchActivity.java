@@ -71,7 +71,8 @@ public class FoodSearchActivity extends AppCompatActivity {
                     @Override
                     public void onFoodItemClicked(Food selectedItem) {
                         Intent navIntent = new Intent(FoodSearchActivity.this, FoodInfoActivity.class);
-                        //navIntent.putExtra(FoodInfoActivity.FOOD_EXTRA_KEY, Parcels.wrap(selectedItem));
+                        navIntent.putExtra(FoodInfoActivity.FOOD_TITLE, selectedItem.getComplementsString());
+                        navIntent.putExtra(FoodInfoActivity.IMAGE_URL, selectedItem.getThumbnailSources().get(0));
                         startActivity(navIntent);
                     }
                 });
