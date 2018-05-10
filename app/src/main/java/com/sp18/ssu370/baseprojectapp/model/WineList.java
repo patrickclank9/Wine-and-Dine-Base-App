@@ -5,11 +5,14 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 
 public class WineList {
-    @SerializedName("matches")
     private ArrayList<Wine> Wines = new ArrayList<Wine>();
 
-    public void addWine(Wine wine){
-        Wines.add(wine);
+    public void addWine(Wine food){
+        Wines.add(food);
+    }
+
+    public void setWines(ArrayList<Wine> f){
+        this.Wines = f;
     }
 
     public ArrayList<Wine> getWines() {

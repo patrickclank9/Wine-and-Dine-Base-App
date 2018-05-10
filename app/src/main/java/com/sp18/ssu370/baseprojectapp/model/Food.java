@@ -12,35 +12,41 @@ import java.util.ArrayList;
 import Database.FoodEntity;
 
 public class Food {
+    private String name = "test Food";
 
-    private String foodname;
+    private String Meal_Designation = "Meal_Designation";
 
-    private String source;
+    private String Meal_Type = "Meal_Type";
 
-    private String FoodId;
+    private String Address = "123456";
 
-    private ArrayList<String> complements;
+    private ArrayList<String> complements = new ArrayList<String>();
 
-    private ArrayList<String> thumbnailSources;
+    private ArrayList<String> thumbnailSources  = new ArrayList<String>();
 
-    public Food(String foodname, String source, String FoodId, ArrayList<String> complements, ArrayList<String> thumbnailSources){
-        this.foodname = foodname;
-        this.source = source;
-        this.FoodId = FoodId;
+    public String getMeal_Designation() {
+        return Meal_Designation;
+    }
+
+    public String getMeal_Type() {
+        return Meal_Type;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public Food(String name, String Meal_Designation, String Meal_Type, String Address, ArrayList<String> complements, ArrayList<String> thumbnailSources){
+        this.name = name;
+        this.Meal_Designation = Meal_Designation;
+        this.Meal_Type = Meal_Type;
+        this.Address = Address;
         this.complements = complements;
         this.thumbnailSources = thumbnailSources;
     }
 
     public String getName() {
-        return foodname;
-    }
-
-    public String getSource() {
-        return source;
-    }
-
-    public String getFoodId() {
-        return FoodId;
+        return name;
     }
 
     public ArrayList<String> getComplements() {
@@ -48,7 +54,7 @@ public class Food {
     }
 
     public String getComplementsString() {
-        String listString = "";
+        String listString = "\n";
         for (String s : complements) {
             listString += s + "\n";
         }
@@ -59,3 +65,5 @@ public class Food {
         return thumbnailSources;
     }
 }
+
+

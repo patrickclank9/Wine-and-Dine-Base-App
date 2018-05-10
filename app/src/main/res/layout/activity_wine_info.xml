@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Wine Name -"
+        android:text=""
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -73,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Wine Year -"
+        android:text=""
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -85,11 +85,11 @@
         android:id="@+id/detailsABV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Wine ABV -"
+        android:text=""
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailsYear" />
@@ -105,7 +105,7 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailsABV" />
+        app:layout_constraintTop_toBottomOf="@+id/detailsVarietal" />
 
     <TextView
         android:id="@+id/details"
@@ -134,7 +134,7 @@
 
 
             <TextView
-                android:id="@+id/MealDesignation"
+                android:id="@+id/wine_comp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"

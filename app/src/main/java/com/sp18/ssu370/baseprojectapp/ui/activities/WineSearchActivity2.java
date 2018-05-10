@@ -48,29 +48,83 @@ public class WineSearchActivity2 extends AppCompatActivity {
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                WineList Wines = new WineList();
+                WineList wines = new WineList();
 
-                Wines.addWine(new Wine("cheese wine", "Wine info", "5156", new ArrayList<String>(){{
-                    add("crackers");
-                    add("peanut butter");
-                }}, new ArrayList<String>(){{
-                    add("http://www.howmuchisin.com/produce_converters_app/vegetables_large/cheese.png");
-                }}));
+                wines.addWine(new Wine("Jewel Collection","White","Chardonnay",14.4,2015,"Ruby Hill",
+                        new ArrayList<String>(){
+                            {
+                                add("Chicken");
+                                add("Fish");
+                                add("White Sauce Pasta");
+                                add("Pork");
+                                add("turkey");
+                            }},
+                        new ArrayList<String>(){{
+                            add("https://i.imgur.com/8NKPjEl.jpg");
+                        }}));
+                wines.addWine(new Wine("Ruby Hill Chardonnay","White","Chardonnay",14.1,2016,"Ruby Hill",
+                        new ArrayList<String>(){
+                            {
+                                add("Chicken");
+                                add("Fish");
+                                add("White Sauce Pasta");
+                                add("Pork");
+                                add("turkey");
+                            }},
+                        new ArrayList<String>(){{
+                            add("https://i.imgur.com/8NKPjEl.jpg");
+                        }}));
+                wines.addWine(new Wine("Cakebread Chardonnay","White","Chardonnay",14.3,2015,"Cakebread Cellars",
+                        new ArrayList<String>(){
+                            {
+                                add("Chicken");
+                                add("Fish");
+                                add("White Sauce Pasta");
+                                add("Pork");
+                                add("turkey");
+                            }},
+                        new ArrayList<String>(){{
+                            add("https://i.imgur.com/5VSW8PL.png");
+                        }}));
+                wines.addWine(new Wine("Eric's Chardonnay","White","Chardonnay",13.5,2017,"Wente Vineyards",
+                        new ArrayList<String>(){
+                            {
+                                add("Chicken");
+                                add("Fish");
+                                add("White Sauce Pasta");
+                                add("Pork");
+                                add("turkey");
+                            }},
+                        new ArrayList<String>(){{
+                            add("https://i.imgur.com/nVwH5Xw.jpg");
+                        }}));
+                wines.addWine(new Wine("Riva Ranch Chardonnay","White","Chardonnay",14.5,2016,"Wente Vineyards",
+                        new ArrayList<String>(){
+                            {
+                                add("Chicken");
+                                add("Fish");
+                                add("White Sauce Pasta");
+                                add("Pork");
+                                add("turkey");
+                            }},
+                        new ArrayList<String>(){{
+                            add("https://i.imgur.com/nVwH5Xw.jpg");
+                        }}));
 
-                Wines.addWine(new Wine("egg wine", "Wine info", "5156", new ArrayList<String>(){{
-                    add("crackers");
-                    add("peanut butter");
-                }}, new ArrayList<String>(){{
-                    add("http://fedandfit.com/wp-content/uploads/2018/01/Hard-Boiled-Egg-200x200.jpg");
-                }}));
-
-                adapter = new WineSearchAdapter(Wines.getWines());
+                adapter = new WineSearchAdapter(wines.getWines());
 
                 adapter.setWineItemClickListener(new WineSearchAdapter.WineItemClickListener() {
                     @Override
                     public void onWineItemClicked(Wine selectedItem) {
                         Intent navIntent = new Intent(WineSearchActivity2.this, WineInfoActivity.class);
-                        //navIntent.putExtra(WineInfoActivity.Wine_EXTRA_KEY, Parcels.wrap(selectedItem));
+                        navIntent.putExtra(WineInfoActivity.WINE_TITLE, selectedItem.getName());
+                        navIntent.putExtra(WineInfoActivity.IMAGE_URL, selectedItem.getThumbnailSources().get(0));
+                        navIntent.putExtra(WineInfoActivity.COMPLEMENTS, selectedItem.getComplementsString());
+                        navIntent.putExtra(WineInfoActivity.WINERY, selectedItem.getWinery());
+                        navIntent.putExtra(WineInfoActivity.WINECOLOR, selectedItem.getWinecolor());
+                        navIntent.putExtra(WineInfoActivity.WINEVARIETAL, selectedItem.getWinevarietal());
+                        navIntent.putExtra(WineInfoActivity.WINEABV, selectedItem.getWineABV());
+                        navIntent.putExtra(WineInfoActivity.WINEYEAR, selectedItem.getWineyear());
                         startActivity(navIntent);
                     }
                 });

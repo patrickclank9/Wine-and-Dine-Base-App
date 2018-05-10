@@ -1,6 +1,7 @@
 package com.sp18.ssu370.baseprojectapp.ui.activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,12 +41,23 @@ public class FoodInfoActivity extends AppCompatActivity {
 
         Bundle b = getIntent().getExtras();
 
-        foodname = findViewById(R.id.food_name);
-        thumbnailSource = findViewById(R.id.food_pic);
+        foodname = findViewById(R.id.textView);
+        thumbnailSource = findViewById(R.id.image);
+        complements = findViewById(R.id.food_comp);
+        mealDesignation = findViewById(R.id.detailsDesignation);
+        mealType = findViewById(R.id.detailsType);
+        String s = "";
 
 
         if(b!=null) {
             foodname.setText((String)b.get(FOOD_TITLE));
+            complements.setText((String)b.get(COMPLEMENTS));
+            mealDesignation.setText((String)b.get(MEAL_DESIGNATION));
+            mealType.setText((String)b.get(MEAL_TYPE));
+            s = (String)b.get(ADDRESS);
+
+
+
             Glide.with(this)
                     .load(b.get(IMAGE_URL))
                     .into(thumbnailSource);
@@ -72,9 +84,16 @@ public class FoodInfoActivity extends AppCompatActivity {
         mapbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FoodInfoActivity.this, MapsActivity.class));
+                //startActivity(new Intent(FoodInfoActivity.this, MapsActivity.class));
+                //openMaps(s);
+
             }
         });
 
+    }
+    public void openMaps(String address){
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("geo:0,0?q=" + address));
     }
 }

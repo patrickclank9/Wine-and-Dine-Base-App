@@ -13,6 +13,10 @@ public class FoodList {
         Foods.add(food);
     }
 
+    public void setFoods(ArrayList<Food> f){
+        this.Foods = f;
+    }
+
     public ArrayList<Food> getFoods() {
         return Foods;
     }
