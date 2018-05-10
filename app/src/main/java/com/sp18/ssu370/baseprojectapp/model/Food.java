@@ -1,15 +1,6 @@
 package com.sp18.ssu370.baseprojectapp.model;
 
-import android.os.Parcelable;
-
-import com.google.gson.annotations.SerializedName;
-import com.sp18.ssu370.baseprojectapp.ui.activities.FoodInfoActivity;
-
-import org.parceler.Parcel;
-
 import java.util.ArrayList;
-
-import Database.FoodEntity;
 
 public class Food {
     private String name = "test Food";

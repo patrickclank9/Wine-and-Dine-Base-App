@@ -18,7 +18,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import Database.AddressEntity;
+
 import Database.FoodEntity;
 import Database.StoreEntity;
 import Database.WineAndDineDatabase;
@@ -28,7 +28,8 @@ import Database.WineryEntity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String DATABASE_NAME ="wine_db";
-    private WineAndDineDatabase winedatabase;
+    public WineAndDineDatabase winedatabase;
+
     private ImageButton winetypebutton;
     private ImageButton foodtypebutton;
     private ImageButton profilebutton;

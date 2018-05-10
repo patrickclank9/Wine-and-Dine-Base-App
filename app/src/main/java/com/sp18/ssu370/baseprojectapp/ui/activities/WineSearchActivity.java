@@ -1,5 +1,8 @@
 package com.sp18.ssu370.baseprojectapp.ui.activities;
 
+import android.arch.persistence.db.SupportSQLiteOpenHelper;
+import android.arch.persistence.room.DatabaseConfiguration;
+import android.arch.persistence.room.InvalidationTracker;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,8 +14,17 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.sp18.ssu370.baseprojectapp.R;
+import com.sp18.ssu370.baseprojectapp.model.Wine;
+import com.sp18.ssu370.baseprojectapp.model.WineList;
 import com.sp18.ssu370.baseprojectapp.network.BaseAsyncTask;
 import com.sp18.ssu370.baseprojectapp.search.WineSearchAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import Database.WineAndDineDao;
+import Database.WineAndDineDatabase;
+import Database.WineEntity;
 
 public class WineSearchActivity extends AppCompatActivity {
 
@@ -26,11 +38,13 @@ public class WineSearchActivity extends AppCompatActivity {
     private LinearLayoutManager linearLayoutManager;
     private WineSearchAdapter adapter;
     private RecyclerView wineResultList;
-
+    private String wineInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wine_search);
+
+
 
         /*wineinfobutton = (Button) findViewById(R.id.toWineInfoActivity);                                   // Wine Search button  Red
         wineinfobutton.setOnClickListener(new View.OnClickListener() {

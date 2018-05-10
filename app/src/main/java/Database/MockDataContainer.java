@@ -5,7 +5,7 @@ public class MockDataContainer {
     private List<FoodEntity> foods;
     private List<WineryEntity> winery;
     private List<StoreEntity> store;
-    private List<AddressEntity> address;
+
     public List<WineEntity> getWines() {
         return wines;
     }
@@ -17,8 +17,5 @@ public class MockDataContainer {
     }
     public List<StoreEntity> getStore() {
         return store;
-    }
-    public List<AddressEntity> getAddress(){
-        return address;
     }
 }

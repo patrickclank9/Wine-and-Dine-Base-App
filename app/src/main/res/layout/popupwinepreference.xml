@@ -16,11 +16,5 @@
         android:text="X"
         android:textColor="@color/black"
         android:textStyle="bold" />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerviewwinepreference"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@android:color/darker_gray"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="190dp" />
+
 </android.support.constraint.ConstraintLayout>

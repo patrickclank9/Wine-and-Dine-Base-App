@@ -10,8 +10,8 @@ public class FoodList {
     //@SerializedName("matches")
     private ArrayList<Food> Foods = new ArrayList<Food>(){{
         add(new Food("cheese", "food info", "5156", new ArrayList<String>(){{
-            add("crackers");
-            add("peanut butter");
+            add("Zinfandel");
+            add("butter");
         }}, new ArrayList<String>(){{
             add("http://www.howmuchisin.com/produce_converters_app/vegetables_large/cheese.png");
         }}));

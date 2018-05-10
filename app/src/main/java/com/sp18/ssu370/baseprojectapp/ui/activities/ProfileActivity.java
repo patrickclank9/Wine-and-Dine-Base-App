@@ -1,6 +1,7 @@
 package com.sp18.ssu370.baseprojectapp.ui.activities;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -21,7 +22,7 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageButton profilebutton;
     private ImageButton mainactivitybutton;
     private ImageButton mapbutton;
-  
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +78,7 @@ public class ProfileActivity extends AppCompatActivity {
 
 
         profilebutton = findViewById(R.id.toProfileActivity);                                          // Profile button
-        profilebutton.setOnClickListener(new View.OnClickListener() {
+        profilebutton.setOnclickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, ProfileActivity.class));

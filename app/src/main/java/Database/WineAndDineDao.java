@@ -20,12 +20,7 @@ public interface WineAndDineDao {
     void insertFood(FoodEntity food);
     @Insert
     void insertStore(StoreEntity store);
-    @Insert
-    void insertAddress(AddressEntity address);
-    /*
-    @Insert
-    void insertUser(UserEntity user);
-    */
+
     //DROP TABLES
     @Query ("DELETE FROM winery_table")
      void nukewinery();
@@ -38,11 +33,8 @@ public interface WineAndDineDao {
     //WINE QUERIES
 
     //USED FOR POPULATING RECYCLER AFTER WINE COLOR PAGE
-    @Query ("SELECT * FROM wine_table WHERE wine_color= :search")
-    List<WineEntity> getAllWineColor(String search);
-
-
-
+    @Query ("SELECT * FROM wine_table")
+    List<WineEntity> getAllWines();
 
     @Query ("SELECT * FROM wine_table WHERE wine_varietal= :search")
     List<WineEntity> getWineVarietal(String search);
@@ -67,5 +59,10 @@ public interface WineAndDineDao {
 
 
     //ADDRESS QUERIES
+    @Query("SELECT store_address FROM store_table WHERE store_id= :search")
+    String getStoreAddress(int search);
 
 }
+
+
+

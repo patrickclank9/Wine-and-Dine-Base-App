@@ -6,35 +6,55 @@ import com.google.gson.annotations.SerializedName;
 
 import org.parceler.Parcel;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 @Parcel
 public class Wine {
-    @SerializedName("wineName")
-    private String name;
 
-    @SerializedName("sourceDisplayName")
-    private String source;
+    private String winename;
+    private String winecolor;
+    private String winevarietal;
+    private Double wineABV;
+    private Integer wineyear;
+    private String winery;
 
-    @SerializedName("id")
-    private String WineId;
+    public String getWinery() {
+        return winery;
+    }
 
-    @SerializedName("complements")
     private ArrayList<String> complements;
-
-    @SerializedName("smallImageUrls")
     private ArrayList<String> thumbnailSources;
 
-    public String getName() {
-        return name;
+    public Wine(String winename, String winecolor, String winevarietal, Double wineABV, Integer wineyear,String winery, ArrayList<String> complements, ArrayList<String> thumbnailSources) {
+        this.winename = winename;
+        this.winecolor = winecolor;
+        this.winevarietal = winevarietal;
+        this.wineABV = wineABV;
+        this.wineyear = wineyear;
+        this.winery=winery;
+        this.complements = complements;
+        this.thumbnailSources = thumbnailSources;
     }
 
-    public String getSource() {
-        return source;
+    public String getWinename() {
+        return winename;
     }
 
-    public String getWineId() {
-        return WineId;
+    public String getWinecolor() {
+        return winecolor;
+    }
+
+    public String getWinevarietal() {
+        return winevarietal;
+    }
+
+    public Double getWineABV() {
+        return wineABV;
+    }
+
+    public Integer getWineyear() {
+        return wineyear;
     }
 
     public ArrayList<String> getComplements() {
@@ -45,3 +65,5 @@ public class Wine {
         return thumbnailSources;
     }
 }
+
+
