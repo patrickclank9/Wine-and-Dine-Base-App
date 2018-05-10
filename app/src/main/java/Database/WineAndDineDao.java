@@ -67,5 +67,9 @@ public interface WineAndDineDao {
 
 
     //ADDRESS QUERIES
+    @Query("SELECT store_address from store_table where store_id= :search")
+    String getStoreAddress(int search);
 
+    @Query("SELECT winery_address from winery_table where winery_id= :search")
+    String getWineryAddress(int search);
 }

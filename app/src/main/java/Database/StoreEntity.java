@@ -16,7 +16,7 @@ public class StoreEntity {
     private String storespecialty;
 
     @ColumnInfo (name="store_address")
-    private String storeaddress;
+    public String storeaddress;
 
     public String getStoreaddress() {
         return storeaddress;

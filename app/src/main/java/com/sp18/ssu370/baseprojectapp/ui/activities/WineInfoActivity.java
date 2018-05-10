@@ -1,6 +1,7 @@
 package com.sp18.ssu370.baseprojectapp.ui.activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,8 +41,17 @@ public class WineInfoActivity extends AppCompatActivity {
         mapbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WineInfoActivity.this, MapsActivity.class));
+                //startActivity(new Intent(WineInfoActivity.this, MapsActivity.class));
+                //String address ;
+                //openGMaps(address);
             }
         });
+    }
+
+    public void openGMaps(String address) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("geo:0,0?q=" + address));
+        startActivity(intent);
     }
 }

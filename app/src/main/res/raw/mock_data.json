@@ -363,12 +363,14 @@
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Pork",
       "storeid":1
-    },{
+    },
+    {
       "foodname" : "Pork Casserole",
       "foodmealdesignation":"Dinner",
       "foodmealtype":"Pork",
       "storeid":5
-    },{
+    },
+    {
       "foodname" : "Pulled Pork Sandwiches",
       "foodmealdesignation":"Lunch",
       "foodmealtype":"Pork",

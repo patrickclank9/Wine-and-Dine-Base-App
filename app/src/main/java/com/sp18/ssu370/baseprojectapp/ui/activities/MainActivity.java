@@ -28,7 +28,7 @@ import Database.WineryEntity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String DATABASE_NAME ="wine_db";
-    private WineAndDineDatabase winedatabase;
+    public  static WineAndDineDatabase winedatabase;
     private ImageButton winetypebutton;
     private ImageButton foodtypebutton;
     private ImageButton profilebutton;
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 MockDataContainer mockDataList = gson.fromJson(json, MockDataContainer.class);
 
                 for (WineEntity wine : mockDataList.getWines()) {  // for each entry in list
-                    winedatabase.myDao () . insertWine ( wine );
+                    winedatabase.myDao().insertWine ( wine );
                 }
                 for (FoodEntity food : mockDataList.getFoods()) {
                     winedatabase.myDao().insertFood(food);

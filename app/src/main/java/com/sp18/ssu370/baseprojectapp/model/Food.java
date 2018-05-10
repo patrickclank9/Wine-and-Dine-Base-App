@@ -14,9 +14,13 @@ import Database.FoodEntity;
 public class Food {
     private String name = "test Food";
 
+    private String Meal_Designation = "Meal_Designation";
+
+    private String Meal_Type = "Meal_Type";
+
     private String source = "test display name";
 
-    private String FoodId = "123456";
+    private String Address = "123456";
 
     private ArrayList<String> complements = new ArrayList<String>() {{
         add("test item 1");
@@ -28,10 +32,11 @@ public class Food {
         add("https://i.imgur.com/vtjlMSR.jpg");
     }};
 
-    public Food(String name, String source, String FoodId, ArrayList<String> complements, ArrayList<String> thumbnailSources){
+    public Food(String name, String Meal_Designation, String Meal_Type, String Address, ArrayList<String> complements, ArrayList<String> thumbnailSources){
         this.name = name;
-        this.source = source;
-        this.FoodId = FoodId;
+        this.Meal_Designation = Meal_Designation;
+        this.Meal_Type = Meal_Type;
+        this.Address = Address;
         this.complements = complements;
         this.thumbnailSources = thumbnailSources;
     }
@@ -42,10 +47,6 @@ public class Food {
 
     public String getSource() {
         return source;
-    }
-
-    public String getFoodId() {
-        return FoodId;
     }
 
     public ArrayList<String> getComplements() {
