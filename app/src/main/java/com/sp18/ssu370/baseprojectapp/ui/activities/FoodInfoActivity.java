@@ -42,7 +42,7 @@ public class FoodInfoActivity extends AppCompatActivity {
 
         foodname = findViewById(R.id.food_name);
         thumbnailSource = findViewById(R.id.food_pic);
-        
+
 
         if(b!=null) {
             foodname.setText((String)b.get(FOOD_TITLE));
