@@ -28,62 +28,14 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         winePreferenceDialog = new Dialog(this);
-    }
-
-
-    public void ShowWinePopup(View v) {
-        TextView txtclose;
-        winePreferenceDialog.setContentView(R.layout.popupwinepreference);
-        txtclose = winePreferenceDialog.findViewById(R.id.txtclose);
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                winePreferenceDialog.dismiss();
-            }
-        });
-        winePreferenceDialog.show();
-
-    }
-}
-    /*
-    public void ShowMatchPopup(View v) {
-        TextView txtclose;
-        myDialog.setContentView(R.layout.popupmatches);
-        txtclose = myDialog.findViewById(R.id.txtclose);
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myDialog.dismiss();
-            }
-        });
-        myDialog.show();
-
-    }
-    public void ShowFoodPopup(View v) {
-        TextView txtclose;
-        myDialog.setContentView(R.layout.popupfoodpreference);
-        txtclose = myDialog.findViewById(R.id.txtclose);
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myDialog.dismiss();
-            }
-        });
-        myDialog.show();
-    }
-
-
-
-
-
 
         profilebutton = findViewById(R.id.toProfileActivity);                                          // Profile button
-        profilebutton.setOnclickListener(new View.OnClickListener() {
+        profilebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, ProfileActivity.class));
             }
-        }
+        });
 
         mainactivitybutton = findViewById(R.id.toMainActivity);                                        // Home button
         mainactivitybutton.setOnClickListener(new View.OnClickListener() {
@@ -91,7 +43,7 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, MainActivity.class));
             }
-        }
+        });
 
         mapbutton = findViewById(R.id.FindLoc);                                                       // Map button
         mapbutton.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +52,8 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(new Intent(ProfileActivity.this, MapsActivity.class));
             }
 
-        }
+        });
+    }
 }
 
-*/
+
