@@ -17,20 +17,48 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        android:text=" Breakfast"
+        app:layout_constraintBottom_toTopOf="@id/toFoodSearchActivity1"
+        app:layout_constraintStart_toStartOf="@id/toFoodSearchActivity1"
+        app:layout_constraintEnd_toEndOf="@id/toFoodSearchActivity1"
+        android:background="@android:color/transparent"
+        />
+
     <ImageButton
         android:id="@+id/toFoodSearchActivity1"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:src="@mipmap/ic_launcher_round"
+        android:src="@mipmap/ic_egg"
         android:scaleType="fitCenter"
 
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
 
         android:layout_marginBottom="95dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        android:text="Lunch"
+        app:layout_constraintBottom_toTopOf="@id/toFoodSearchActivity2"
+        app:layout_constraintStart_toStartOf="@id/toFoodSearchActivity2"
+        app:layout_constraintEnd_toEndOf="@id/toFoodSearchActivity2"
         android:background="@android:color/transparent"
         />
 
@@ -42,12 +70,26 @@
         android:scaleType="fitCenter"
 
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="110dp"
 
         android:layout_marginBottom="95dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        android:text="Dinner"
+        app:layout_constraintBottom_toTopOf="@id/toFoodSearchActivity3"
+        app:layout_constraintStart_toStartOf="@id/toFoodSearchActivity3"
+        app:layout_constraintEnd_toEndOf="@id/toFoodSearchActivity3"
         android:background="@android:color/transparent"
         />
 
@@ -59,8 +101,22 @@
         android:scaleType="fitCenter"
 
         app:layout_constraintTop_toBottomOf="@+id/toFoodSearchActivity1"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="@+id/toFoodSearchActivity1"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        android:text="Dessert"
+        app:layout_constraintBottom_toTopOf="@id/toFoodSearchActivity4"
+        app:layout_constraintStart_toStartOf="@id/toFoodSearchActivity4"
+        app:layout_constraintEnd_toEndOf="@id/toFoodSearchActivity4"
         android:background="@android:color/transparent"
         />
 
@@ -73,7 +129,7 @@
 
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintTop_toBottomOf="@+id/toFoodSearchActivity2"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="@+id/toFoodSearchActivity2"
         android:background="@android:color/transparent"
         />
