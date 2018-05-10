@@ -9,7 +9,7 @@ import org.parceler.Parcel;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-@Parcel
+
 public class Wine {
 
     private String winename;

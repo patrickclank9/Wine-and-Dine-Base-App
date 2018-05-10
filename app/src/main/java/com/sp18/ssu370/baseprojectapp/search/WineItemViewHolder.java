@@ -28,7 +28,7 @@ public class WineItemViewHolder extends RecyclerView.ViewHolder implements View.
     }
 
     public void bindView(Wine item) {
-        WineName.setText(item.getName());
+        WineName.setText(item.getWinename());
 
         Glide.with(this.itemView)
                 .load(item.getThumbnailSources().get(0))
